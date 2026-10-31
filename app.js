@@ -71,6 +71,32 @@
     document.getElementById("script-count").textContent=list.length+" kịch bản";
     var chips=document.querySelectorAll("[data-script-filter]");chips.forEach(function(b){b.classList.toggle("active",b.dataset.scriptFilter===state.scriptFilter);});
   }
+
+  function caseLibrary(){
+    var list=D.cases.filter(function(c){return c.roles.indexOf(state.role)>-1||state.role==="all";});
+    var cards=list.map(function(c){
+      return '<a class="lesson-card" href="'+href("case/"+c.id)+'"><div class="lesson-top"><span class="lesson-no">◇</span><span class="lesson-status not-done">'+c.steps.length+' bước</span></div><p class="lesson-tag">'+esc(c.category)+' · '+esc(c.level)+'</p><h3>'+esc(c.title)+'</h3><p>'+esc(c.scenario)+'</p><div class="lesson-bottom"><span>◷ '+c.time+' phút</span><b>Giải tình huống ↗</b></div></a>';
+    }).join("");
+    ROOT.innerHTML='<div class="page">'+titleBlock("APPLIED PRACTICE","Case Lab","Mỗi tình huống gồm ba quyết định nối tiếp. Chọn phương án, nhận phản biện và xem lý do vì sao một cách xử lý an toàn hơn. Tất cả là tình huống giả định, không dùng dữ liệu khách thật.")+'<div class="notice"><strong>Giới hạn:</strong> Đây là công cụ tự học, không phải chứng nhận đủ năng lực tư vấn. Case có thể có nhiều lựa chọn hợp lý theo bối cảnh; bài tập mô phỏng giả định cụ thể.</div><div class="lesson-grid">'+cards+'</div></div>';
+  }
+  function caseDetail(id){
+    var c=D.cases.find(function(x){return x.id===id;});
+    if(!c){notFound();return;}
+    if(!state.caseStudy||state.caseStudy.id!==id){state.caseStudy={id:id,index:0,answers:{},done:false,recorded:false};}
+    var run=state.caseStudy,step=c.steps[run.index],has=Object.prototype.hasOwnProperty.call(run.answers,run.index),choice=has?run.answers[run.index]:null;
+    var top='<div class="page"><button class="detail-back" data-go="cases" type="button">← Trở lại Case Lab</button><div class="detail-hero"><p class="eyebrow">'+esc(c.category)+' / '+esc(c.level)+'</p><h1>'+esc(c.title)+'</h1><p>'+esc(c.scenario)+'</p><div class="detail-meta"><span class="pill">◷ '+c.time+' phút</span><span class="pill">Giả định đào tạo</span></div></div>';
+    if(run.done){
+      var score=c.steps.reduce(function(n,st,i){return n+(run.answers[i]===st.best?1:0);},0);
+      var review=c.steps.map(function(st,i){return '<div class="review-item"><h4>'+esc((i+1)+". "+st.question)+'</h4><p class="'+(run.answers[i]===st.best?"correct-label":"wrong-label")+'">Lựa chọn: '+esc(st.choices[run.answers[i]]||"Chưa trả lời")+'</p><p class="correct-label">Phương án được ưu tiên: '+esc(st.choices[st.best])+'</p><p>'+esc(st.why)+'</p></div>';}).join("");
+      ROOT.innerHTML=top+'<section class="quiz-result" style="margin-top:23px;max-width:none"><p class="eyebrow">CASE REVIEW</p><div class="result-medallion">'+score+'/'+c.steps.length+'</div><h2>'+(score===c.steps.length?"Đã chọn đúng các ưu tiên trong mô phỏng.":"Cùng xem lại các quyết định.")+'</h2><p>Điểm case chỉ hỗ trợ tự đánh giá. Trường hợp thực tế vẫn cần hồ sơ SKU, chính sách và phê duyệt nghiệp vụ.</p><div class="progress-actions" style="justify-content:center">'+btn("Quay lại Case Lab","cases","btn-ghost")+'<button type="button" class="btn btn-navy" data-case-restart="'+esc(c.id)+'">Làm lại tình huống</button></div><div class="review-list">'+review+'</div></section></div>';
+      return;
+    }
+    var progress=Math.round((run.index+1)*100/c.steps.length);
+    var options=step.choices.map(function(v,i){return '<button type="button" class="option '+(choice===i?"selected "+(i===step.best?"correct":"wrong"):"")+'" data-case-option="'+i+'" '+(has?"disabled":"")+'><b>'+String.fromCharCode(65+i)+'</b><span>'+esc(v)+'</span></button>';}).join("");
+    var feedback=has?'<div class="quiz-feedback"><strong>'+(choice===step.best?"Lựa chọn phù hợp.":"Cần cân nhắc thêm.")+'</strong><p>'+esc(step.why)+'</p><p><strong>Nguyên tắc bảo vệ:</strong> '+esc(step.risk)+'</p></div>':"";
+    var actions='<div class="quiz-controls"><button class="btn btn-ghost" type="button" data-go="cases">← Thư viện</button><button class="btn btn-navy" type="button" data-case-next="1" '+(has?"":"disabled")+'>'+(run.index===c.steps.length-1?"Xem đánh giá":"Tiếp theo")+' ↗</button></div>';
+    ROOT.innerHTML=top+'<div class="quiz-main" style="margin-top:23px"><div class="quiz-head"><span>DECISION '+(run.index+1)+' / '+c.steps.length+'</span><span>'+progress+'%</span></div><div class="quiz-bar"><span style="width:'+progress+'%"></span></div><section class="quiz-card"><p class="quiz-number">CHỌN CÁCH XỬ LÝ</p><h2>'+esc(step.question)+'</h2><div class="options">'+options+'</div>'+feedback+actions+'</section></div></div>';
+  }
   function resources(){
     var refs=D.policy.map(function(x){return '<article class="resource-card"><p class="eyebrow">OFFICIAL POLICY</p><h3>'+esc(x.name)+'</h3><p>'+esc(x.desc)+'</p><a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">Kiểm tra chính sách ↗</a></article>';}).join("");
     var more=D.links.map(function(x){return '<article class="resource-card"><p class="eyebrow">REFERENCE</p><h3>'+esc(x.name)+'</h3><p>Đọc nguồn tham khảo, kiểm tra mức độ phù hợp với hồ sơ sản phẩm và quy trình thực tế.</p><a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">Mở nguồn ↗</a></article>';}).join("");
@@ -146,6 +172,34 @@
   document.addEventListener("click",function(e){
     var role=e.target.closest("[data-role]");if(role){setRole(role.dataset.role);return;}
     var complete=e.target.closest("[data-complete]");if(complete){var id=complete.dataset.complete;var index=state.completed.indexOf(id);if(index>-1)state.completed.splice(index,1);else state.completed.push(id);save();lesson(id);toast(index>-1?"Đã bỏ đánh dấu.":"Đã ghi nhận hoàn thành.");return;}
+
+    var casePick=e.target.closest("[data-case-option]");
+    if(casePick&&state.caseStudy&&!state.caseStudy.done){
+      var cRun=state.caseStudy,active=D.cases.find(function(z){return z.id===cRun.id;});
+      if(active&&!Object.prototype.hasOwnProperty.call(cRun.answers,cRun.index)){
+        cRun.answers[cRun.index]=Number(casePick.dataset.caseOption);caseDetail(cRun.id);
+      }
+      return;
+    }
+    var caseNext=e.target.closest("[data-case-next]");
+    if(caseNext&&state.caseStudy&&!state.caseStudy.done){
+      var cRun=state.caseStudy,active=D.cases.find(function(z){return z.id===cRun.id;});
+      if(active&&Object.prototype.hasOwnProperty.call(cRun.answers,cRun.index)){
+        if(cRun.index<active.steps.length-1){cRun.index++;caseDetail(cRun.id);}
+        else{
+          cRun.done=true;
+          if(!cRun.recorded){
+            var score=active.steps.reduce(function(n,st,i){return n+(cRun.answers[i]===st.best?1:0);},0);
+            state.results.push({mode:"case",role:state.role,caseId:cRun.id,score:score,total:active.steps.length,percent:Math.round(score*100/active.steps.length),passed:score===active.steps.length,at:new Date().toISOString()});
+            state.results=state.results.slice(-30);cRun.recorded=true;save();
+          }
+          caseDetail(cRun.id);
+        }
+      }
+      return;
+    }
+    var caseRestart=e.target.closest("[data-case-restart]");
+    if(caseRestart){state.caseStudy=null;caseDetail(caseRestart.dataset.caseRestart);return;}
     var f=e.target.closest("[data-script-filter]");if(f){state.scriptFilter=f.dataset.scriptFilter;updateScripts();return;}
     var copy=e.target.closest("[data-copy-script]");if(copy){var x=D.scripts.find(function(s){return s.id===copy.dataset.copyScript;});if(x){var txt=x.reply;if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(txt).then(function(){toast("Đã sao chép kịch bản.");}).catch(function(){toast("Không thể sao chép tự động.");});}else{var ta=document.createElement("textarea");ta.value=txt;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");toast("Đã sao chép kịch bản.");}catch(err){toast("Không thể sao chép tự động.");}ta.remove();}}return;}
     var start=e.target.closest("[data-start-quiz]");if(start){startQuiz(start.dataset.startQuiz);return;}
