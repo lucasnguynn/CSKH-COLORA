@@ -354,5 +354,64 @@ window.COLORA_INTELLIGENCE = {
       "title": "GIA - Gem treatments",
       "url": "https://www.gia.edu/gem-treatment?lang=en"
     }
-  ]
+  ],
+  "cuts": [
+    {
+      "id": "round",
+      "name": "Round",
+      "shape": "round",
+      "focus": "Viền không có đầu nhọn",
+      "tradeoff": "Hình tròn dễ hình dung tỷ lệ; không đồng nghĩa đá có độ bền hay độ sáng tối ưu nếu chất lượng cắt thấp.",
+      "setting": "Kiểm tra tương quan đường kính, độ nhô, chấu và vị trí viên đá."
+    },
+    {
+      "id": "oval",
+      "name": "Oval",
+      "shape": "oval",
+      "focus": "Dáng kéo dài, mềm",
+      "tradeoff": "Tạo cảm giác thon; chú ý tỷ lệ và hiệu ứng vùng tối/bow-tie tùy cấu trúc giác cắt.",
+      "setting": "Kiểm tra chiều dài × chiều rộng, đế đính và độ nghiêng khi đeo."
+    },
+    {
+      "id": "pear",
+      "name": "Pear",
+      "shape": "pear",
+      "focus": "Một đầu nhọn cần bảo vệ",
+      "tradeoff": "Tạo nhịp hướng và nét mềm; đầu nhọn nhạy cảm với tác động khi setting không phù hợp.",
+      "setting": "Xác minh chấu bảo vệ mũi đá, chiều cao đầu nhọn, đường đi dây/vị trí mắc."
+    },
+    {
+      "id": "marquise",
+      "name": "Marquise",
+      "shape": "marquise",
+      "focus": "Hai đầu nhọn, silhouette dài",
+      "tradeoff": "Tạo dáng kéo dài nhưng dễ sứt ở hai mũi khi tiếp xúc/va đập.",
+      "setting": "Đòi hỏi kiểm tra bảo vệ cả hai mũi, độ dày vùng đầu và khoảng cách chấu."
+    },
+    {
+      "id": "emerald",
+      "name": "Emerald / Step Cut",
+      "shape": "emerald",
+      "focus": "Mặt cắt bậc và góc cắt",
+      "tradeoff": "Mô tả cảm giác trong, phẳng và đường phản xạ khác brilliant; bao thể có thể dễ thấy hơn tùy viên đá.",
+      "setting": "Chú ý góc vát, độ trong thực tế và cấu trúc bảo vệ góc."
+    },
+    {
+      "id": "cushion",
+      "name": "Cushion",
+      "shape": "cushion",
+      "focus": "Góc bo mềm",
+      "tradeoff": "Dáng vuông/chữ nhật bo góc; hình học và độ sáng khác nhau theo tỷ lệ viên đá.",
+      "setting": "Kiểm tra bo góc, kích thước mặt và vị trí chấu."
+    },
+    {
+      "id": "cabochon",
+      "name": "Cabochon",
+      "shape": "cabochon",
+      "focus": "Bề mặt vòm, không phải brilliant faceting",
+      "tradeoff": "Nhấn vào màu và một số hiệu ứng quang học đặc trưng; không dùng tiêu chí 'lấp lánh nhiều mặt' để đánh giá.",
+      "setting": "Kiểm tra độ nhô vòm, viền và điểm tỳ khi đeo."
+    }
+  ],
+  "gemSafetyNote": "Dữ liệu là tham khảo khoáng vật học theo GIA, không thể quyết định an toàn vệ sinh của thành phẩm COLORA khi thiếu thông tin đá, treatment, kim loại, lớp phủ, keo và cấu trúc setting."
 };
