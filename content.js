@@ -1,6 +1,6 @@
 /* COLORA Academy public education content. No customer records. */
 window.COLORA_DATA = {
-  "version": "1.1",
+  "version": "2.0",
   "updated": "31.10.2026",
   "roles": [
     {
@@ -323,6 +323,170 @@ window.COLORA_DATA = {
         "Dừng upsell khi đang có vấn đề chưa giải quyết."
       ],
       "source": "COLORA Digital Customer Journey"
+    },
+    {
+      "id": "sku-proof",
+      "no": "10",
+      "title": "Hồ sơ sản phẩm đáng tin cậy",
+      "tag": "Product Intelligence",
+      "summary": "Làm rõ dữ liệu SKU, bằng chứng QC và giới hạn các lời khẳng định trước khi tư vấn.",
+      "minutes": 12,
+      "roles": [
+        "all",
+        "care",
+        "marketing"
+      ],
+      "sections": [
+        {
+          "h": "SKU là đơn vị của sự thật",
+          "p": "Không dùng tên collection để suy ra mọi thiết kế có cùng loại bạc, hàm lượng, công nghệ lớp phủ hoặc loại đá. Một tên sản phẩm có thể có nhiều biến thể đá, size và phiên bản sản xuất. Nhân viên phải xác định đúng SKU/phiên bản trước khi tư vấn hoặc xuất nội dung marketing. Hồ sơ sản phẩm được phê duyệt nên gồm mã, ngày hiệu lực, người chịu trách nhiệm và ngày cập nhật gần nhất. Nếu một trường thiếu bằng chứng, hiển thị 'chờ xác minh' thay vì điền theo ước tính."
+        },
+        {
+          "h": "Phân biệt bằng chứng",
+          "p": "BOM và phiếu QC chứng minh cấu hình vật liệu/finish thực tế, không phải mockup thiết kế. Hồ sơ nhà cung cấp hoặc báo cáo lab có phạm vi xác nhận riêng, không mặc định bao phủ mọi viên trong lô. Certificate của COLORA là tài liệu thương hiệu, không biến thành chứng nhận của GIA chỉ vì có mã sản phẩm. Câu hỏi khách 'đá có tự nhiên và không xử lý?' phải được tách làm hai khẳng định cần hai loại dữ liệu rõ."
+        },
+        {
+          "h": "Cổng kiểm tra trước khi công bố",
+          "p": "Hãy kiểm tra bảy nhóm: danh tính SKU; kim loại/hàm lượng; finish; đá và xử lý; kết cấu, độ đeo; điều kiện thương mại; ảnh và video. Mỗi nhóm cần có người duyệt và tài liệu đối chiếu. Thiếu bất kỳ thông tin trọng yếu nào cho câu đang được hỏi thì phải xin xác minh, không tự lấy thông tin từ sản phẩm tương tự. Tránh lưu thông tin cá nhân, giá nhập, danh sách khách hoặc tài liệu mật lên website học tập công khai."
+        },
+        {
+          "h": "Nói được và chưa nói được",
+          "p": "Có thể nói 'đây là mẫu thiết kế có viên đá oval và phần chấu thấp' nếu có ảnh và xác nhận QC. Không được nói 'toàn bộ COLORA dùng bạc 930‰, phủ rhodium+nano' chỉ dựa trên một bản concept. Với trường chưa duyệt, trả lời: 'Mình sẽ đối chiếu hồ sơ kỹ thuật của đúng mẫu rồi xác nhận lại với bạn'. Luôn nêu mốc phản hồi thật, không hứa chắc nếu chưa được đội phụ trách xác nhận."
+        },
+        {
+          "h": "Version control cho chính sách",
+          "p": "Chính sách bảo hành và đổi trả phải có mã phiên bản, ngày hiệu lực, người duyệt và cách truy cập đáng tin cậy. Khi website bán hàng ở trạng thái Coming Soon, nhân viên cần bản chính sách nội bộ được cấp quyền, không thể khẳng định một liên kết yêu cầu mật khẩu đã được kiểm tra công khai. Khi có thay đổi, cập nhật đồng thời FAQ, PDP, thư viện kịch bản, thẻ bảo hành và nội dung quảng cáo."
+        }
+      ],
+      "checks": [
+        "Không suy luận từ mẫu khác sang SKU chưa kiểm tra.",
+        "Phân biệt hồ sơ nội bộ, báo cáo lab và hình mockup.",
+        "Đánh dấu chưa xác minh thay vì điền bằng giả định."
+      ],
+      "source": "COLORA Product Knowledge V1 + GIA treatment guidance"
+    },
+    {
+      "id": "stone-decision",
+      "no": "11",
+      "title": "Độ bền đá và ngữ cảnh sử dụng",
+      "tag": "Gemstone Decision Lab",
+      "summary": "Ứng dụng hardness, toughness, stability và setting để tư vấn an toàn theo người đeo.",
+      "minutes": 15,
+      "roles": [
+        "all",
+        "care",
+        "marketing"
+      ],
+      "sections": [
+        {
+          "h": "Ba trụ cột độ bền",
+          "p": "Mohs chỉ là thang xếp hạng khả năng chống trầy tương đối, không phản ánh đầy đủ nguy cơ sứt, nứt hay đổi màu. Toughness là khả năng chống nứt/vỡ dưới tác động; stability là khả năng chịu ánh sáng, nhiệt, độ ẩm và hóa chất. Sapphire Mohs 9 có thể phù hợp dùng thường xuyên nhưng vẫn có thể sứt khi va đập; topaz Mohs 8 có cát khai, dễ nứt hơn nhiều người nghĩ; moonstone Mohs 6–6,5 có độ dai kém."
+        },
+        {
+          "h": "Không xếp đá bằng một bảng 'tốt nhất'",
+          "p": "Một viên đá phù hợp phải xét người đeo và dạng trang sức. Người làm việc tay nhiều, tập thể thao hoặc thường đeo nhẫn có nguy cơ va chạm cao. Với viên đá nhạy cảm, cân nhắc dây chuyền/bông tai hoặc kết cấu bảo vệ. Với gemstone-first của COLORA, cần xem đá, viền chấu, đầu nhọn, chiều cao mặt và thói quen bảo quản như một hệ thống. Không tự gán xác suất hỏng hay tuổi thọ lớp phủ khi chưa có dữ liệu thử nghiệm."
+        },
+        {
+          "h": "Giác cắt và các điểm yếu cơ học",
+          "p": "Pear và marquise thường có đầu nhọn cần được đặt và bảo vệ đúng; oval/round có đường viền tròn hơn nhưng không miễn nhiễm với nứt; step cut có thể khiến bao thể hoặc vệt tăng trưởng dễ quan sát hơn trong một số loại đá; cabochon không phản xạ như faceted brilliant. Một giác cắt đẹp không đủ để khẳng định dễ vệ sinh, vì under-gallery, chấu, khe tiếp giáp và độ nhô là các biến quan trọng."
+        },
+        {
+          "h": "Các tình huống cần ngừng sử dụng",
+          "p": "Khi khách phản ánh đá lay, chấu lỏng hoặc móp khiến sản phẩm mắc vào quần áo, hãy hướng dẫn tạm ngừng đeo, tránh tự dùng keo/kìm và chuyển QC. Khi có xỉn màu hoặc đổi màu đá, đừng kết luận hỏng hay dùng hóa chất tẩy ngay: cần xác định viên đá, treatment, kim loại, finish, điều kiện tiếp xúc và tình trạng thực tế trước khi đưa giải pháp."
+        },
+        {
+          "h": "Vệ sinh theo cấu hình hoàn thiện",
+          "p": "GIA có hướng dẫn riêng cho các loại đá, đôi khi cho phép nước xà phòng ấm hoặc một số phương pháp chuyên nghiệp. Tuy nhiên, một món COLORA còn có bạc, lớp phủ, keo hoặc lắp ghép và có thể có nhiều viên đá. Không chuyển nguyên hướng dẫn của đá rời thành cam kết vệ sinh cho trang sức hoàn chỉnh. Trong khi chưa biết cấu hình, khuyến nghị lau nhẹ bằng khăn mềm sạch khô và liên hệ kỹ thuật khi cần làm sạch sâu."
+        },
+        {
+          "h": "Tư vấn một cách trung thực",
+          "p": "Không cần làm khách lo sợ về rủi ro. Giải thích nhẹ nhàng vì sao một viên đá và thiết kế có thể cần chăm sóc khác. Ví dụ: 'Mẫu này có đầu pear nổi bật. Nếu bạn thường xuyên vận động mạnh với tay, mình sẽ giúp bạn xem cấu trúc bảo vệ đá và lựa chọn cách đeo phù hợp'. Giữ yếu tố cảm xúc nhưng để thông số và trải nghiệm thực tế quyết định lời khuyên."
+        }
+      ],
+      "checks": [
+        "Không dùng Mohs làm chỉ số độ bền tổng hợp.",
+        "Xét bối cảnh người đeo, giác cắt và setting.",
+        "Không khuyên siêu âm/hơi nước trước khi xác nhận cấu hình."
+      ],
+      "source": "GIA More than Mohs; GIA stone care guides"
+    },
+    {
+      "id": "service-case",
+      "no": "12",
+      "title": "Service Recovery và chuyển cấp",
+      "tag": "Client Care Operations",
+      "summary": "Xây trường hợp rõ ràng từ tiếp nhận đến hậu xử lý, tránh phản hồi cảm tính.",
+      "minutes": 14,
+      "roles": [
+        "care"
+      ],
+      "sections": [
+        {
+          "h": "Mô hình tiếp nhận 5 bước",
+          "p": "(1) Thừa nhận vấn đề cụ thể; (2) phân loại mức độ an toàn và quyền lợi; (3) thu dữ liệu tối thiểu như mã đơn, mã SKU, mô tả, ảnh nếu thuận tiện; (4) mở mã case có người phụ trách, mốc cập nhật; (5) chuyển QC hoặc người có thẩm quyền khi vượt phạm vi. Không yêu cầu khách kể lại quá nhiều lần, và không dùng video unboxing như điều kiện duy nhất để nghe khiếu nại."
+        },
+        {
+          "h": "Đừng nhầm sự đồng cảm với nhận trách nhiệm",
+          "p": "Một lời xin lỗi cho trải nghiệm bất tiện có thể phù hợp trước khi xác định nguyên nhân. Nhưng không nên viết 'đây chắc chắn là lỗi kỹ thuật của COLORA' khi chưa có biên bản kiểm tra. Đồng thời không nên nói 'đây là do bạn đeo sai' chỉ từ một ảnh. Phân biệt rõ cảm xúc của khách, bằng chứng, quy trình xác minh và quyền lợi sau kết luận."
+        },
+        {
+          "h": "Một người chịu trách nhiệm xuyên suốt",
+          "p": "Case phải có owner, trạng thái, kênh, mức độ ưu tiên, bước xử lý tiếp theo, lịch cập nhật và quyết định đã phê duyệt. Khi chuyển kỹ thuật, advisor vẫn là đầu mối hỗ trợ để khách không phải tự tìm nhiều bộ phận. Nếu chưa biết thời gian hoàn tất, nêu rõ thời điểm COLORA sẽ cập nhật thông tin tiếp theo, không phát biểu chắc chắn thời gian giao sửa không có cơ sở."
+        },
+        {
+          "h": "Quy trình xử lý phải tách nhánh",
+          "p": "Trễ giao hàng khác lỗi sản phẩm; vấn đề kỳ vọng màu đá khác trường hợp hàng giao sai; lỗi kết cấu có yếu tố an toàn cần ưu tiên hơn phàn nàn thông thường. Mỗi nhánh cần có điều kiện kiểm tra, người phê duyệt, mẫu phản hồi và thông tin quyền lợi theo chính sách có hiệu lực. Không dùng giới hạn mua theo category hay chiến dịch marketing để biện minh việc từ chối bảo hành."
+        },
+        {
+          "h": "Đóng case bằng trải nghiệm thực",
+          "p": "Chỉ nên kết thúc khi đã có phương án xác nhận, bàn giao, giải thích phần đã thực hiện và theo dõi nếu phù hợp. Gửi nội dung chăm sóc sau xử lý mà không ép mua thêm. Theo dõi case mở lại, tỷ lệ quá hạn cập nhật, nguyên nhân lặp và số trường hợp phải chuyển cấp để cải thiện cả CSKH lẫn thiết kế sản phẩm."
+        }
+      ],
+      "checks": [
+        "Tách an toàn, bằng chứng và quyền lợi.",
+        "Không tự quy lỗi hay hứa bồi hoàn.",
+        "Một owner và bước cập nhật tiếp theo cho mỗi case."
+      ],
+      "source": "COLORA Client Care Playbook, Case Lab V1.1"
+    },
+    {
+      "id": "claim-review",
+      "no": "13",
+      "title": "Kiểm toán thông tin trước khi đăng",
+      "tag": "Marketing Proof Lab",
+      "summary": "Chuyển câu chuyện thương hiệu thành nội dung đúng sự thật và có căn cứ theo SKU.",
+      "minutes": 12,
+      "roles": [
+        "marketing"
+      ],
+      "sections": [
+        {
+          "h": "Phân loại mọi lời khẳng định",
+          "p": "Chia nội dung thành ba tầng: (A) giá trị và triết lý có thể diễn giải như cảm xúc; (B) thông tin sản phẩm khách hàng có thể kiểm tra như đá, bạc, kích thước, cấu trúc; (C) lời hứa thương mại hoặc pháp lý như bảo hành, đổi trả, xuất xứ, chứng nhận. Nhóm B và C đòi hỏi nguồn/phiên bản cụ thể. Việc bài viết có giọng điệu thơ mộng không làm giảm nghĩa vụ cung cấp thông tin chính xác."
+        },
+        {
+          "h": "Review từ ảnh đến chữ",
+          "p": "Ảnh người đeo cần thể hiện kích thước và tỷ lệ phù hợp, không kéo dài viên đá hay mạ màu sai với thực tế. Không ghép một viên đá của biến thể A vào mẫu kim loại B rồi mô tả như hàng thật. Khi nói 100% recycled silver, nickel-free, xuất xứ nguyên liệu hoặc phủ nhiều lớp, phải có tài liệu tương ứng và phạm vi áp dụng. Khi chưa có chứng cứ, để ở trạng thái chờ duyệt hoặc bỏ claim."
+        },
+        {
+          "h": "Đá tự nhiên không đồng nghĩa untreated",
+          "p": "Báo cáo lab, hồ sơ mua hàng và phát biểu nhà cung cấp có thể chứng minh các phạm vi khác nhau. Không dùng các từ AAA, quý hiếm, đầu tư, thần kỳ hoặc chứng nhận GIA như một thang chất lượng phổ quát khi thiếu căn cứ. Khác biệt màu đá dưới ánh sáng có thể là đặc trưng tự nhiên nhưng cũng có thể do hình ảnh sai; quy trình content phải kiểm tra mẫu thật và phản hồi khi khách nhận khác kỳ vọng."
+        },
+        {
+          "h": "Bằng chứng chính sách phải có hiệu lực",
+          "p": "Thông tin giao hàng, đổi trả, sửa chữa, bảo hành 24 tháng hoặc dịch vụ miễn phí phải trích từ bản điều khoản đã duyệt có ngày áp dụng. Khi các trang colora.vn còn chuyển đến Coming Soon, nhóm nội dung cần nhận một bản policy nội bộ xác thực và không đưa chi tiết chưa kiểm chứng vào quảng cáo. Nếu policy thay đổi, cập nhật tất cả điểm chạm: PDP, FAQ, landing page, email, Zalo và kịch bản tư vấn."
+        },
+        {
+          "h": "Xử lý xung đột giữa tăng chuyển đổi và sự thật",
+          "p": "Một headline có thể tạo nhiều click nhưng khiến khách thất vọng khi nhận sản phẩm. Khi muốn dùng mô tả có nguy cơ hiểu nhầm, ưu tiên cách nói vẫn cuốn hút nhưng rõ điều kiện, ví dụ 'đá màu tự nhiên được tuyển chọn cho thiết kế này' chỉ sau khi có hồ sơ đúng mẫu. Đo tỷ lệ hoàn hàng, khiếu nại khác kỳ vọng, phản hồi về màu/kích thước và chất lượng người mua mới, không chỉ CTR."
+        }
+      ],
+      "checks": [
+        "Mọi claim B/C có source, version và reviewer.",
+        "Ảnh đúng biến thể và tương quan kích thước.",
+        "Không dùng lời hứa kỹ thuật hay pháp lý theo bản nháp."
+      ],
+      "source": "COLORA Marketing/Brand Guidelines; GIA treatment guidance"
     }
   ],
   "scripts": [
@@ -1100,6 +1264,367 @@ window.COLORA_DATA = {
       ],
       "correct": 1,
       "why": "Đảm bảo khách thực sự nhận được giải pháp.",
+      "critical": false
+    },
+    {
+      "id": 43,
+      "track": "all",
+      "lesson": "sku-proof",
+      "prompt": "Ảnh macro của mẫu nhẫn cho biết đá là oval. Có thể khẳng định mọi phiên bản cùng loại bạc không?",
+      "options": [
+        "Có vì cùng collection",
+        "Có nếu ảnh có màu bạc",
+        "Chưa; cần BOM/QC của từng biến thể",
+        "Có nếu designer xác nhận bằng tin nhắn"
+      ],
+      "correct": 2,
+      "why": "Hình ảnh dáng đá không chứng minh cấu hình vật liệu.",
+      "critical": true
+    },
+    {
+      "id": 44,
+      "track": "all",
+      "lesson": "sku-proof",
+      "prompt": "Khách hỏi viên sapphire có untreated không, hồ sơ chỉ ghi natural. Nên trả lời?",
+      "options": [
+        "Natural không xác định treatment; cần đối chiếu hồ sơ",
+        "Natural luôn untreated",
+        "Sapphire nào cũng xử lý nhiệt",
+        "Không cần phản hồi"
+      ],
+      "correct": 0,
+      "why": "Tách xác minh natural và treatment.",
+      "critical": true
+    },
+    {
+      "id": 45,
+      "track": "all",
+      "lesson": "sku-proof",
+      "prompt": "Bản mockup có dòng 930‰ nhưng BOM và QC chưa thống nhất. Nhân viên nên?",
+      "options": [
+        "Chọn số cao để định vị sang",
+        "Hỏi marketing lấy số phổ biến",
+        "Từ chối tư vấn tất cả sản phẩm",
+        "Treo claim, chuyển QC xác minh mẫu thực tế"
+      ],
+      "correct": 3,
+      "why": "Bản mockup không chứng minh hàm lượng kim loại.",
+      "critical": true
+    },
+    {
+      "id": 46,
+      "track": "all",
+      "lesson": "sku-proof",
+      "prompt": "Hồ sơ SKU thiếu treatment, nhưng khách chỉ hỏi cách bảo quản. Cách làm hợp lý?",
+      "options": [
+        "Khuyên ngâm tẩy ngay",
+        "Đưa hướng dẫn phòng ngừa thận trọng, đồng thời tra hồ sơ kỹ thuật",
+        "Tự giả định untreated",
+        "Không cần nghĩ đến treatment"
+      ],
+      "correct": 1,
+      "why": "Hướng dẫn tạm thời bảo thủ và kiểm tra tiếp.",
+      "critical": false
+    },
+    {
+      "id": 47,
+      "track": "all",
+      "lesson": "sku-proof",
+      "prompt": "Một bản chính sách nội bộ đáng tin cho CSKH cần tối thiểu?",
+      "options": [
+        "Tên đẹp và nhiều trang",
+        "Số lượt xem",
+        "Người duyệt, ngày hiệu lực, phiên bản và kênh truy cập",
+        "Email cá nhân người soạn"
+      ],
+      "correct": 2,
+      "why": "Quản trị phiên bản hạn chế dùng nhầm điều khoản.",
+      "critical": false
+    },
+    {
+      "id": 48,
+      "track": "all",
+      "lesson": "sku-proof",
+      "prompt": "Certificate của COLORA có đủ để nói đá đã được GIA kiểm định?",
+      "options": [
+        "Có nếu có QR",
+        "Chỉ khi brand có tagline tiếng Anh",
+        "Có nếu khách không hỏi kỹ",
+        "Không; báo cáo lab độc lập cần tài liệu và mã tương ứng"
+      ],
+      "correct": 3,
+      "why": "Không đánh đồng chứng nhận thương hiệu với report lab.",
+      "critical": true
+    },
+    {
+      "id": 49,
+      "track": "all",
+      "lesson": "stone-decision",
+      "prompt": "Topaz Mohs 8 và Amethyst Mohs 7. Kết luận nào có cơ sở?",
+      "options": [
+        "Topaz chắc chắn khó vỡ hơn",
+        "Mohs chỉ cho biết chống trầy tương đối; topaz có cát khai cần cân nhắc va đập",
+        "Amethyst không bao giờ trầy",
+        "Cả hai chống va đập như nhau"
+      ],
+      "correct": 1,
+      "why": "Hardness khác toughness; topaz có cát khai.",
+      "critical": true
+    },
+    {
+      "id": 50,
+      "track": "all",
+      "lesson": "stone-decision",
+      "prompt": "Khách làm việc tay nhiều muốn nhẫn moonstone mặt cao. Nên?",
+      "options": [
+        "Xác nhận không nguy cơ vì màu sáng",
+        "Nói moonstone chỉ để trưng bày",
+        "Giải thích rủi ro va đập/cát khai và gợi ý cấu trúc/loại trang sức ít va chạm hơn",
+        "Yêu cầu khách chọn sapphire bất kể sở thích"
+      ],
+      "correct": 2,
+      "why": "Tư vấn theo lối sống, không cấm đoán hay ép chọn.",
+      "critical": false
+    },
+    {
+      "id": 51,
+      "track": "all",
+      "lesson": "stone-decision",
+      "prompt": "Khách hỏi có nên dùng máy siêu âm để vệ sinh tourmaline?",
+      "options": [
+        "Không khuyến nghị; loại đá, treatment, setting cần kiểm tra",
+        "Có vì Mohs trên 7",
+        "Có nếu máy rẻ",
+        "Cứ thử với đá nhỏ"
+      ],
+      "correct": 0,
+      "why": "GIA không khuyến nghị siêu âm cho tourmaline.",
+      "critical": true
+    },
+    {
+      "id": 52,
+      "track": "all",
+      "lesson": "stone-decision",
+      "prompt": "Khách thích pear cut. Phần nào cần lưu ý đặc biệt?",
+      "options": [
+        "Độ trong mặc định AAA",
+        "Đầu nhọn và bảo vệ khi va chạm",
+        "Mọi pear không cần chấu",
+        "Mọi pear đều có cùng carat"
+      ],
+      "correct": 1,
+      "why": "Pear có điểm nhọn cần setting phù hợp.",
+      "critical": false
+    },
+    {
+      "id": 53,
+      "track": "all",
+      "lesson": "stone-decision",
+      "prompt": "Khách hỏi emerald có cần chăm sóc khác sapphire không?",
+      "options": [
+        "Không, cả hai luôn giống nhau",
+        "Emerald mềm như ngọc trai",
+        "Chỉ emerald giả mới cần chăm sóc",
+        "Có, emerald có thể có khe nứt/điền dầu nhựa, cần tránh phương pháp mạnh"
+      ],
+      "correct": 3,
+      "why": "GIA nêu rủi ro khi xử lý và vệ sinh emerald.",
+      "critical": true
+    },
+    {
+      "id": 54,
+      "track": "all",
+      "lesson": "stone-decision",
+      "prompt": "Món trang sức nhiều loại đá khác nhau: nên chọn hướng dẫn vệ sinh dựa trên?",
+      "options": [
+        "Loại đá cứng nhất",
+        "Chỉ kim loại",
+        "Cấu hình thành phẩm và thành phần nhạy cảm nhất",
+        "Giá bán"
+      ],
+      "correct": 2,
+      "why": "Không dùng hướng dẫn đá rời cho tổng thể sản phẩm.",
+      "critical": true
+    },
+    {
+      "id": 55,
+      "track": "care",
+      "lesson": "service-case",
+      "prompt": "Khách nói đá lỏng và đòi hoàn tiền. Thứ tự đầu tiên phù hợp?",
+      "options": [
+        "Ngừng đeo → tiếp nhận → kiểm tra QC/điều khoản → phương án",
+        "Hứa hoàn tiền → xin địa chỉ → bỏ qua QC",
+        "Hỏi khách vì sao dùng sai → từ chối",
+        "Đề xuất mua vòng thay thế"
+      ],
+      "correct": 0,
+      "why": "An toàn trước, xác minh sau, phê duyệt quyền lợi.",
+      "critical": true
+    },
+    {
+      "id": 56,
+      "track": "care",
+      "lesson": "service-case",
+      "prompt": "Khách tức giận, QC chưa kết luận nguyên nhân. Cách xin lỗi nào phù hợp?",
+      "options": [
+        "Xin lỗi vì lỗi sản xuất chắc chắn do COLORA",
+        "Xin lỗi vì sự bất tiện và cam kết kiểm tra nghiêm túc",
+        "Xin lỗi nếu khách hiểu nhầm",
+        "Không xin lỗi trước khi QC"
+      ],
+      "correct": 1,
+      "why": "Có thể thừa nhận bất tiện mà không tự quy nguyên nhân.",
+      "critical": false
+    },
+    {
+      "id": 57,
+      "track": "care",
+      "lesson": "service-case",
+      "prompt": "Trong case trễ giao, thông tin chưa xác định ETA. Nhân viên nên?",
+      "options": [
+        "Hứa giao trước 18h ngày mai",
+        "Ngừng trả lời",
+        "Nêu tình trạng đã xác minh và mốc cập nhật tiếp theo",
+        "Gửi mã giảm giá thay mọi thông tin"
+      ],
+      "correct": 2,
+      "why": "Trung thực về bất định và tiếp tục chịu trách nhiệm.",
+      "critical": false
+    },
+    {
+      "id": 58,
+      "track": "care",
+      "lesson": "service-case",
+      "prompt": "Khi chuyển case sang QC, trách nhiệm giao tiếp với khách?",
+      "options": [
+        "Khách tự liên lạc QC",
+        "Marketing tiếp quản mọi khiếu nại",
+        "Không ai cần phụ trách",
+        "Advisor vẫn giữ đầu mối, theo dõi và cập nhật"
+      ],
+      "correct": 3,
+      "why": "Single owner ngăn khách bị chuyển qua nhiều người.",
+      "critical": true
+    },
+    {
+      "id": 59,
+      "track": "care",
+      "lesson": "service-case",
+      "prompt": "Một case có video nhận hàng nhưng thiếu mã đơn. Cách tiếp nhận?",
+      "options": [
+        "Dùng dấu hiệu có sẵn để hỗ trợ xác minh, không yêu cầu kể lại vô tận",
+        "Chỉ giải quyết có video và mã đơn cùng lúc",
+        "Từ chối ngay",
+        "Đưa ảnh khách lên mạng tìm người mua"
+      ],
+      "correct": 0,
+      "why": "Thu thông tin tối thiểu đủ điều kiện xử lý.",
+      "critical": false
+    },
+    {
+      "id": 60,
+      "track": "care",
+      "lesson": "service-case",
+      "prompt": "Chỉ số nào hữu ích để cải thiện chất lượng dịch vụ?",
+      "options": [
+        "Số emoji gửi",
+        "Số lần gọi khách mua thêm",
+        "Tỷ lệ case mở lại và chậm cập nhật đã hứa",
+        "Tổng độ dài chat"
+      ],
+      "correct": 2,
+      "why": "Các chỉ số phản ánh giải quyết có chất lượng.",
+      "critical": false
+    },
+    {
+      "id": 61,
+      "track": "marketing",
+      "lesson": "claim-review",
+      "prompt": "Bài đăng muốn ghi 'bạc tái chế 100%' cho toàn bộ SKU. Cần gì?",
+      "options": [
+        "Đoán từ định vị thương hiệu",
+        "Chứng cứ chuỗi vật liệu có phạm vi áp dụng rõ và người duyệt",
+        "Thấy đối thủ có",
+        "Chỉ cần ảnh xưởng"
+      ],
+      "correct": 1,
+      "why": "Claim môi trường cần chứng cứ và phạm vi.",
+      "critical": true
+    },
+    {
+      "id": 62,
+      "track": "marketing",
+      "lesson": "claim-review",
+      "prompt": "Ảnh sản phẩm đá xanh thực tế nhạt hơn hình campaign. Quyết định tốt?",
+      "options": [
+        "Tăng saturation mạnh hơn",
+        "Xóa mọi ảnh có ánh sáng tự nhiên",
+        "Đăng và đợi khách phàn nàn",
+        "Đối chiếu mẫu thật, chỉnh ảnh và chú thích điều kiện ánh sáng"
+      ],
+      "correct": 3,
+      "why": "Giảm gap kỳ vọng với màu thực.",
+      "critical": true
+    },
+    {
+      "id": 63,
+      "track": "marketing",
+      "lesson": "claim-review",
+      "prompt": "Marketing muốn in 'bảo hành 24 tháng' từ bản concept, website đang Coming Soon. Phương án?",
+      "options": [
+        "Duyệt theo trí nhớ",
+        "Nói một thương hiệu khác cũng có",
+        "Yêu cầu bản chính sách có hiệu lực được duyệt rồi mới phát hành",
+        "Lấy số 36 tháng cho hấp dẫn"
+      ],
+      "correct": 2,
+      "why": "Website bị khóa không chứng minh nội dung hiện hành.",
+      "critical": true
+    },
+    {
+      "id": 64,
+      "track": "marketing",
+      "lesson": "claim-review",
+      "prompt": "Những claim nào cần cấp độ chứng cứ theo SKU?",
+      "options": [
+        "Natural/untreated, loại bạc, lớp phủ và khả năng resize",
+        "Chỉ phong cách sống",
+        "Chỉ lời chúc sinh nhật",
+        "Không có nội dung nào"
+      ],
+      "correct": 0,
+      "why": "Thông tin có thể kiểm chứng phải theo mẫu.",
+      "critical": false
+    },
+    {
+      "id": 65,
+      "track": "marketing",
+      "lesson": "claim-review",
+      "prompt": "Claim 'đá này giúp chữa mất ngủ' có phù hợp?",
+      "options": [
+        "Có nếu đăng trên Threads",
+        "Có nếu viết trong lời kể",
+        "Không; COLORA không nên gán công dụng y tế thiếu chứng cứ",
+        "Có khi khách đồng ý"
+      ],
+      "correct": 2,
+      "why": "Tách biểu tượng/cảm xúc với tác dụng y tế.",
+      "critical": true
+    },
+    {
+      "id": 66,
+      "track": "marketing",
+      "lesson": "claim-review",
+      "prompt": "Đánh giá hiệu quả nội dung nên thêm thước đo nào ngoài CTR?",
+      "options": [
+        "Tổng số icon đẹp",
+        "Số hashtag",
+        "Thời lượng font hiển thị",
+        "Khiếu nại sai màu/kích thước và tỷ lệ hoàn trả",
+        "Tần suất AI render"
+      ],
+      "correct": 3,
+      "why": "Chất lượng kỳ vọng sau mua quan trọng như click.",
       "critical": false
     }
   ],
