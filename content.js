@@ -1,0 +1,1156 @@
+/* COLORA Academy public education content. No customer records. */
+window.COLORA_DATA = {
+  "version": "1.0",
+  "updated": "31.10.2026",
+  "roles": [
+    {
+      "id": "all",
+      "name": "Nền tảng",
+      "subtitle": "Mọi thành viên COLORA",
+      "description": "Triết lý thương hiệu, hành trình khách hàng, kiến thức đá và nguyên tắc bảo mật."
+    },
+    {
+      "id": "care",
+      "name": "Client Advisor",
+      "subtitle": "Tư vấn & chăm sóc khách hàng",
+      "description": "Tư vấn có trách nhiệm, xử lý sự cố, hậu mãi và quan hệ dài hạn."
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing",
+      "subtitle": "Nội dung & truyền thông",
+      "description": "Thông tin sản phẩm chính xác, hình ảnh trung thực và claims có chứng cứ."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "brand",
+      "no": "01",
+      "title": "Tinh thần COLORA",
+      "tag": "Brand Foundation",
+      "summary": "Triết lý Facets of Feeling, giá trị tư vấn và ngôn ngữ thương hiệu.",
+      "minutes": 12,
+      "roles": [
+        "all",
+        "care",
+        "marketing"
+      ],
+      "sections": [
+        {
+          "h": "Không định nghĩa cảm xúc thay khách",
+          "p": "COLORA tin rằng mỗi cảm xúc mang một sắc màu và mỗi cuộc đời có nhiều lát cắt. Viên đá màu mở ra cách thể hiện cá nhân, nhưng màu xanh không mặc định là nỗi buồn, màu đỏ không mặc định là tình yêu. Hãy mời khách kể ý nghĩa của chính họ, thay vì gán một ý nghĩa cố định."
+        },
+        {
+          "h": "Gemstone-first, không phải bán đá rời",
+          "p": "COLORA là thương hiệu trang sức demi-fine, tập trung vào thiết kế trang sức hoàn thiện với đá màu. Khi mô tả sản phẩm, hãy bắt đầu từ kiểu dáng, viên đá, trải nghiệm đeo và điểm khác biệt có thể quan sát. Không gọi COLORA là cửa hàng bán đá quý rời."
+        },
+        {
+          "h": "Giọng nói của thương hiệu",
+          "p": "Tôn trọng, ấm áp, tự nhiên, gần gũi và rõ ràng. Tránh giọng ép mua, huyền bí hóa công dụng đá, tự nhận bảo đảm tuyệt đối hoặc định nghĩa khách hàng bằng một tính cách. Tư vấn tốt có thể dẫn đến lựa chọn chưa mua hôm nay."
+        }
+      ],
+      "checks": [
+        "Nói đúng 'trang sức demi-fine'.",
+        "Dùng lời tư vấn có bằng chứng, không chỉ cảm xúc.",
+        "Để khách tự quyết định ý nghĩa sắc màu."
+      ],
+      "source": "COLORA Brand DNA"
+    },
+    {
+      "id": "journey",
+      "no": "02",
+      "title": "Hành trình khách hàng",
+      "tag": "Client Journey",
+      "summary": "Từ Discover đến Belong: hiểu động cơ, nỗi lo và khoảnh khắc cần trợ giúp.",
+      "minutes": 16,
+      "roles": [
+        "all",
+        "care",
+        "marketing"
+      ],
+      "sections": [
+        {
+          "h": "Bảy chặng trải nghiệm",
+          "p": "Discover → Desire → Trust → Experience → Possess → Return → Belong. Mỗi chặng có nhiệm vụ riêng: thu hút bằng hình ảnh, khơi gợi mong muốn, xây niềm tin, hỗ trợ thử/chọn, xác nhận quyền sở hữu, giúp sản phẩm sống cùng người đeo và duy trì quan hệ."
+        },
+        {
+          "h": "Hỏi về nhiệm vụ mua hàng",
+          "p": "Phân biệt self-reward, đeo thường ngày, quà tặng dịp đặc biệt và mua cho người thân. Chỉ hỏi những gì cần thiết: người đeo, tình huống sử dụng, thời điểm cần nhận, ngân sách nếu khách muốn chia sẻ và đặc điểm sản phẩm đang băn khoăn."
+        },
+        {
+          "h": "Sau mua là một phần của sản phẩm",
+          "p": "Khách không chỉ nhớ thời điểm thanh toán. Họ nhớ lúc mở hộp, lần đeo đầu tiên và cách COLORA phản hồi khi có vấn đề. Chăm sóc theo nhịp phù hợp, không biến mỗi lần liên hệ thành một đợt quảng cáo."
+        }
+      ],
+      "checks": [
+        "Hiểu sự khác nhau giữa người mua và người đeo.",
+        "Ghi nhận thắc mắc về size, màu, finish và dịp nhận.",
+        "Không upsell khi có khiếu nại đang mở."
+      ],
+      "source": "COLORA Customer Journey Strategy"
+    },
+    {
+      "id": "gemstone",
+      "no": "03",
+      "title": "Đá quý & giác cắt",
+      "tag": "Gemstone Intelligence",
+      "summary": "Đá tự nhiên, đá xử lý, Mohs, giác cắt và giới hạn của từng nhận định.",
+      "minutes": 22,
+      "roles": [
+        "all",
+        "care",
+        "marketing"
+      ],
+      "sections": [
+        {
+          "h": "Natural, treated, synthetic, imitation",
+          "p": "Đá tự nhiên hình thành trong tự nhiên. Đá tự nhiên có thể được xử lý để cải thiện vẻ ngoài hoặc độ ổn định; xử lý không tự động khiến đá trở thành đá nhân tạo. Synthetic có thành phần/cấu trúc tương ứng nhưng được nuôi tạo, còn imitation chỉ mô phỏng vẻ ngoài. Chỉ khẳng định loại, xử lý và nguồn gốc khi có hồ sơ của SKU hoặc viên đá."
+        },
+        {
+          "h": "Độ cứng không bằng độ bền",
+          "p": "Thang Mohs đo khả năng chống trầy tương đối, không đo khả năng chống vỡ hay sứt mẻ. Độ dai, cát khai, vết nứt, kiểu giác cắt và cấu trúc chấu cũng ảnh hưởng đến độ bền khi đeo. Không nói 'Mohs 8 nên không thể vỡ'."
+        },
+        {
+          "h": "Giác cắt và biểu hiện dưới ánh sáng",
+          "p": "Oval và round thường có đường viền tương đối dễ kết hợp; pear có mũi nhọn cần bảo vệ; marquise có hai đầu dễ bị tác động; emerald/step cut bộc lộ độ trong và tạp chất rõ hơn; cabochon có bề mặt vòm và hiệu ứng khác giác cắt tạo lấp lánh. Không suy diễn một giác cắt là tốt nhất cho mọi loại đá."
+        },
+        {
+          "h": "Ảnh, màu và giấy chứng nhận",
+          "p": "Đá tự nhiên có thể khác nhau về bao thể, vùng màu và phản xạ dưới ánh sáng. Ảnh sản phẩm bị ảnh hưởng bởi ánh sáng, màn hình và góc chụp; cung cấp ảnh/video đúng sản phẩm khi khả thi. Chứng nhận nội bộ của COLORA không phải báo cáo GIA hay bất kỳ phòng giám định độc lập nào nếu không có báo cáo riêng."
+        }
+      ],
+      "checks": [
+        "Kiểm tra hồ sơ xử lý đá trước khi trả lời.",
+        "Tách Mohs, toughness và cấu trúc setting.",
+        "Không đánh đồng certificate thương hiệu với kiểm định độc lập."
+      ],
+      "source": "COLORA Product & Gemstone Knowledge; GIA"
+    },
+    {
+      "id": "care",
+      "no": "04",
+      "title": "Chất liệu & chăm sóc",
+      "tag": "Jewelry Care",
+      "summary": "Bạc, lớp phủ, nước hoa, vệ sinh và tư vấn an toàn theo từng SKU.",
+      "minutes": 18,
+      "roles": [
+        "all",
+        "care",
+        "marketing"
+      ],
+      "sections": [
+        {
+          "h": "Kiểm tra kim loại và finish",
+          "p": "Tài liệu kỹ thuật từng đề cập GENIA276, bạc 925‰/930‰, palladium, rhodium và nano topcoat. Đây không phải bằng chứng rằng mọi SKU có cùng cấu hình. Khi khách hỏi, đọc hồ sơ vật liệu và lớp hoàn thiện đúng sản phẩm đã được QC xác nhận; không lấy thông số từ bản nháp bao bì."
+        },
+        {
+          "h": "Chăm sóc mỗi ngày",
+          "p": "Đeo trang sức sau khi dùng mỹ phẩm và nước hoa. Tránh va đập, ma sát mạnh, chất tẩy, nước biển và hồ bơi. Khi tháo, lau nhẹ bằng khăn mềm sạch khô và cất từng món riêng để tránh cọ xát. Không khuyến nghị ngâm hoặc sử dụng dung dịch tẩy khi chưa biết loại đá và xử lý."
+        },
+        {
+          "h": "Khi nào cần kỹ thuật",
+          "p": "Nếu chấu lỏng, đá lay, khóa không chắc, sản phẩm biến dạng hay nghi có nứt đá, khuyên khách ngừng đeo và liên hệ COLORA. Không tự khuyên dùng keo, siết chấu hay máy siêu âm; có loại đá và phương pháp xử lý không phù hợp với siêu âm/hơi nước."
+        },
+        {
+          "h": "Tại sao bạc có thể xỉn",
+          "p": "Bề mặt bạc có thể thay đổi khi tiếp xúc với môi trường, hóa chất và ma sát. Lớp phủ có thể cải thiện trải nghiệm nhưng không phải sự đảm bảo vĩnh viễn. Vệ sinh cơ bản khác với đánh bóng, mạ lại hay phục hồi chuyên sâu; dịch vụ có thể phải kiểm tra và báo phí."
+        }
+      ],
+      "checks": [
+        "Không bảo đảm 'không xỉn', 'không bong' tuyệt đối.",
+        "Hỏi đúng loại đá/finish trước khi tư vấn làm sạch.",
+        "Khuyến nghị ngừng đeo khi thấy đá/chấu không an toàn."
+      ],
+      "source": "COLORA Client Facing Care Kit; GIA Jewelry Care"
+    },
+    {
+      "id": "advisor",
+      "no": "05",
+      "title": "Tư vấn & lựa chọn",
+      "tag": "Client Advisor",
+      "summary": "Sáu bước tư vấn phù hợp người đeo, ngân sách và quà tặng.",
+      "minutes": 18,
+      "roles": [
+        "care"
+      ],
+      "sections": [
+        {
+          "h": "Sáu bước: mở, lắng nghe, giải thích, chọn lọc, xác nhận, theo sát",
+          "p": "Mở bằng một câu hỏi có mục đích; lắng nghe hoàn cảnh; giải thích bằng thông số đúng; đề xuất tối đa 1–3 mẫu và lý do; xác nhận tên SKU, size, đá, finish, giá, mốc giao và chính sách; theo sát cho đến khi khách thực sự nhận được hỗ trợ cần thiết."
+        },
+        {
+          "h": "Đưa ra lựa chọn có cân nhắc",
+          "p": "Nếu khách làm việc nhiều với tay, cần đeo thường xuyên hoặc có mức ngân sách giới hạn, hãy giải thích cấu trúc và mức độ chăm sóc của từng thiết kế. Sẵn sàng khuyến nghị mẫu ít chi tiết hơn hoặc chưa mua, thay vì thuyết phục bằng sự khan hiếm thiếu căn cứ."
+        },
+        {
+          "h": "Quà tặng và người đeo thực tế",
+          "p": "Khách mua quà có thể không biết size hoặc nhu cầu chăm sóc. Hãy hỏi về dịp tặng, deadline và lối sống người nhận. Thông tin của người mua và người nhận cần tách biệt; không tiết lộ chi tiết thanh toán của người tặng khi hỗ trợ người đeo."
+        }
+      ],
+      "checks": [
+        "Mỗi mẫu đề xuất có lý do rõ.",
+        "Không đòi khách cung cấp dữ liệu không cần.",
+        "Không tự hứa resize miễn phí hay giao đúng ngày trước xác nhận."
+      ],
+      "source": "COLORA Client Care Playbook"
+    },
+    {
+      "id": "resolution",
+      "no": "06",
+      "title": "Xử lý sự cố & hậu mãi",
+      "tag": "Case Resolution",
+      "summary": "Tiếp nhận, xác minh, phân quyền, cập nhật và khép lại khiếu nại.",
+      "minutes": 24,
+      "roles": [
+        "care"
+      ],
+      "sections": [
+        {
+          "h": "Không kết luận trước khi kiểm tra",
+          "p": "Đá lỏng, lớp mạ biến đổi, trễ giao, sai kích thước và thiếu hàng là các nhánh xử lý khác nhau. Tiếp nhận mã đơn, mô tả, ảnh nếu có, nhưng không bắt buộc khách phải có video mở hộp. Ghi nhận cảm giác bất tiện của khách, không tranh cãi và không quy lỗi ngay."
+        },
+        {
+          "h": "Mốc công bố và mốc nội bộ",
+          "p": "Tài liệu COLORA V1 tham chiếu bảo hành 24 tháng với lỗi thuộc trách nhiệm vật liệu/kết cấu/chế tác; các mốc kiểm tra và sửa chữa là theo chính sách đăng trên website tại thời điểm rà soát. Trước khi cam kết bất cứ mốc nào, kiểm tra chính sách mới nhất và tình trạng case cụ thể. Không tự mở rộng hay rút ngắn quyền lợi."
+        },
+        {
+          "h": "Một người chịu trách nhiệm",
+          "p": "Mỗi case cần mã, người phụ trách, trạng thái, mốc cập nhật kế tiếp, bằng chứng kỹ thuật, phương án và sự đồng ý của khách. Nhân viên không tự quyết hoàn tiền, thay đá, miễn phí dịch vụ hoặc bồi thường vượt thẩm quyền. Nếu ngoài quyền hạn, chuyển cấp nhưng vẫn giữ đầu mối chăm sóc."
+        },
+        {
+          "h": "Kết thúc là đã thực sự giải quyết",
+          "p": "Gửi tóm tắt những gì được kiểm tra, xử lý, phí đã xác nhận và hướng dẫn chăm sóc phù hợp. Sau khi giao lại, kiểm tra khách đã nhận được và vấn đề có tái diễn không. Không gửi nhắc mua thêm trong khi sự cố chưa xử lý xong."
+        }
+      ],
+      "checks": [
+        "Tiếp nhận kể cả khi thiếu video mở hộp.",
+        "Ghi rõ owner, next update và phạm vi quyền hạn.",
+        "Không dùng quà hay voucher để thay thế giải quyết lỗi."
+      ],
+      "source": "COLORA Client Care Playbook; chính sách website"
+    },
+    {
+      "id": "privacy",
+      "no": "07",
+      "title": "Dữ liệu & quyền riêng tư",
+      "tag": "Trust & Privacy",
+      "summary": "Chỉ thu thông tin cần thiết; xử lý dữ liệu và liên hệ có căn cứ.",
+      "minutes": 14,
+      "roles": [
+        "all",
+        "care",
+        "marketing"
+      ],
+      "sections": [
+        {
+          "h": "Data minimization",
+          "p": "Chỉ thu mã đơn, tên/kênh liên lạc cần thiết và thông tin sản phẩm đủ để xử lý. Sở thích, ngày kỷ niệm hay thông tin người nhận quà là tùy chọn; giải thích lý do hỏi và không buộc khách chia sẻ."
+        },
+        {
+          "h": "Phân biệt giao dịch và marketing",
+          "p": "Thông báo xác nhận đơn hàng, hỗ trợ hậu mãi khác với tin khuyến mại. Khách mua hàng không mặc định đã đồng ý nhận quảng cáo. Tôn trọng lựa chọn liên lạc và quyền từ chối."
+        },
+        {
+          "h": "Không để lộ dữ liệu qua website",
+          "p": "Đây là cổng luyện tập tĩnh công khai, không có đăng nhập và không được dùng làm nơi lưu khách hàng thực tế. Không nhập họ tên, số điện thoại, mã đơn, OTP, tài liệu định danh hoặc ticket thật. Khi cần CRM, sử dụng hệ thống có xác thực và phân quyền được phê duyệt."
+        }
+      ],
+      "checks": [
+        "Không yêu cầu CCCD/OTP để tư vấn.",
+        "Không đưa dữ liệu khách vào công cụ luyện tập.",
+        "Hỏi tự nguyện và giới hạn phạm vi thông tin lưu."
+      ],
+      "source": "COLORA Client Care Playbook; chính sách bảo mật"
+    },
+    {
+      "id": "claims",
+      "no": "08",
+      "title": "Truyền thông đúng sự thật",
+      "tag": "Marketing & Trust",
+      "summary": "Làm rõ ranh giới giữa storytelling, kiến thức và lời cam kết.",
+      "minutes": 16,
+      "roles": [
+        "marketing"
+      ],
+      "sections": [
+        {
+          "h": "Storytelling không thay thế chứng cứ",
+          "p": "Có thể kể câu chuyện sắc màu, thiết kế và những lát cắt cuộc sống, nhưng không mô tả đá là phương pháp chữa bệnh hoặc gán tính cách cho người đeo. Từng claim về đá tự nhiên, xử lý, loại bạc, tái chế, nickel-free phải có hồ sơ tương ứng trước khi xuất bản."
+        },
+        {
+          "h": "Ảnh thật và khả năng kiểm chứng",
+          "p": "Ưu tiên ảnh macro, ảnh trên người thật, video chuyển động và kích thước hiển thị rõ. Không làm sai sắc độ bằng hậu kỳ, không gắn dấu 'đã kiểm định GIA' khi chỉ có chứng nhận nội bộ, không công bố công nghệ Product Passport đã hoạt động nếu chưa triển khai."
+        },
+        {
+          "h": "Một nguồn sự thật cho chính sách",
+          "p": "Tài liệu đào tạo có thể tóm tắt bảo hành, giao hàng và đổi trả; trang chính sách công khai được phê duyệt mới là nơi tư vấn viên và marketing phải đối chiếu. Khi có thay đổi, cập nhật cùng lúc PDP, FAQ, email và kịch bản."
+        }
+      ],
+      "checks": [
+        "Không dùng claims tuyệt đối chưa kiểm chứng.",
+        "Kiểm tra trang chính sách trước khi chạy campaign.",
+        "Thể hiện đúng sắc độ và thông tin sản phẩm."
+      ],
+      "source": "COLORA Product Knowledge; Release Checklist"
+    },
+    {
+      "id": "relationship",
+      "no": "09",
+      "title": "CRM & quan hệ sau mua",
+      "tag": "Relationship Building",
+      "summary": "Chạm đúng thời điểm, hỏi đúng vấn đề và không áp lực mua lại.",
+      "minutes": 14,
+      "roles": [
+        "care"
+      ],
+      "sections": [
+        {
+          "h": "Nhịp chăm sóc có mục đích",
+          "p": "Ngày nhận hàng: cảm ơn và hướng dẫn hỗ trợ. Sau khoảng 3–7 ngày: hỏi về fit và cảm giác đeo. Khoảng 14 ngày: hướng dẫn care/styling. Sau 30 ngày hoặc lâu hơn: một lời hỏi thăm đúng lúc nếu khách đồng ý. Thời điểm được đề xuất để pilot, không gửi tự động ồ ạt."
+        },
+        {
+          "h": "Biết khi nào nên im lặng",
+          "p": "Nếu khách đang chờ sửa chữa, phản ánh chất lượng hoặc đã từ chối liên hệ, ngừng các luồng marketing có thể gây khó chịu. Tập trung giải quyết và ghi nhớ quyền chọn liên lạc thay vì tối đa số lượng tin nhắn."
+        },
+        {
+          "h": "Đo hiệu quả đúng cách",
+          "p": "Không chỉ xem tốc độ phản hồi. Cần theo dõi lỗi thông tin, case phải mở lại, mức độ hài lòng sau xử lý, tỷ lệ yêu cầu cần chuyển cấp và khiếu nại lặp. Lấy trải nghiệm thực làm tín hiệu cải tiến cả nội dung và sản phẩm."
+        }
+      ],
+      "checks": [
+        "Chăm sóc sau mua trước hết là giúp sử dụng tốt.",
+        "Có lý do cho mỗi touchpoint.",
+        "Dừng upsell khi đang có vấn đề chưa giải quyết."
+      ],
+      "source": "COLORA Digital Customer Journey"
+    }
+  ],
+  "scripts": [
+    {
+      "id": "s01",
+      "type": "Tư vấn",
+      "title": "Khách mới hỏi về COLORA",
+      "intent": "Làm rõ nhu cầu, không gửi hàng loạt sản phẩm",
+      "reply": "Cảm ơn bạn đã quan tâm đến COLORA. Chúng mình thiết kế trang sức demi-fine với đá màu làm điểm nhấn, để mỗi người có thể tìm thấy cách thể hiện thật riêng. Bạn đang tìm một món để đeo hằng ngày hay cho một dịp đặc biệt? Chúng mình sẽ chọn lọc vài gợi ý phù hợp hơn với bạn.",
+      "check": "Không mặc định nhu cầu hoặc giới tính."
+    },
+    {
+      "id": "s02",
+      "type": "Tư vấn",
+      "title": "Khách hỏi vì sao giá cao",
+      "intent": "Giải thích giá trị dựa trên bằng chứng",
+      "reply": "Mình hiểu bạn muốn cân nhắc kỹ trước khi chọn. Với mẫu này, COLORA có thể cùng bạn xem chi tiết chất liệu, viên đá, cấu trúc thiết kế, cách hoàn thiện và quyền lợi chăm sóc đi kèm. Mình sẽ gửi thông số và hình ảnh thật của đúng mẫu để bạn so sánh một cách rõ ràng, thay vì chỉ dựa vào mức giá.",
+      "check": "Đối chiếu SKU, không nói đá hiếm nếu chưa xác thực."
+    },
+    {
+      "id": "s03",
+      "type": "Tư vấn",
+      "title": "Khách chọn quà nhưng không biết size",
+      "intent": "Tránh cam kết đổi size sai",
+      "reply": "Món quà sẽ ý nghĩa hơn khi người nhận cảm thấy thật thoải mái lúc đeo. Bạn đang cân nhắc nhẫn, dây chuyền hay bông tai? Nếu là nhẫn mà chưa chắc size, chúng mình có thể gợi ý cách đo và kiểm tra khả năng chỉnh size của từng thiết kế trước khi bạn quyết định.",
+      "check": "Không hứa mọi mẫu đều resize được."
+    },
+    {
+      "id": "s04",
+      "type": "Đá quý",
+      "title": "Đá tự nhiên có hoàn toàn không xử lý?",
+      "intent": "Tách nguồn gốc với treatment",
+      "reply": "Đá tự nhiên và đá không qua xử lý là hai khái niệm khác nhau. Một số loại đá tự nhiên có thể được xử lý để cải thiện sắc màu hoặc vẻ ngoài. Để trả lời chính xác cho món bạn quan tâm, COLORA sẽ đối chiếu hồ sơ viên đá và thông tin xử lý của mẫu đó trước khi xác nhận.",
+      "check": "Chỉ công bố treatment theo hồ sơ đã phê duyệt."
+    },
+    {
+      "id": "s05",
+      "type": "Đá quý",
+      "title": "Màu đá không giống ảnh",
+      "intent": "Giải thích ánh sáng và xác minh kỳ vọng",
+      "reply": "Cảm ơn bạn đã chia sẻ điều này. Sắc độ của đá màu có thể thể hiện khác nhau theo nguồn sáng, góc nhìn và màn hình. Mình muốn kiểm tra cụ thể mẫu bạn nhận để chắc rằng sự khác biệt nằm trong đặc tính đã mô tả hay có vấn đề cần hỗ trợ. Bạn có thể gửi giúp mình ảnh dưới ánh sáng tự nhiên nếu thuận tiện không?",
+      "check": "Không dùng đặc tính tự nhiên để phủ nhận sai lệch sản phẩm."
+    },
+    {
+      "id": "s06",
+      "type": "Chất liệu",
+      "title": "Bạc có bị đen không?",
+      "intent": "Giải thích giới hạn lớp phủ",
+      "reply": "Bề mặt bạc có thể thay đổi theo môi trường sử dụng, ma sát và tiếp xúc hóa chất, ngay cả khi có lớp hoàn thiện bảo vệ. Với đúng mẫu bạn chọn, COLORA sẽ kiểm tra chất liệu và cách hoàn thiện cụ thể, rồi hướng dẫn bảo quản phù hợp để sản phẩm giữ vẻ đẹp lâu hơn.",
+      "check": "Không cam kết 'không bao giờ xỉn'."
+    },
+    {
+      "id": "s07",
+      "type": "Chăm sóc",
+      "title": "Đeo khi tắm hoặc đi bơi",
+      "intent": "Phòng ngừa rủi ro",
+      "reply": "COLORA không khuyến nghị đeo trang sức khi tắm hoặc bơi. Hóa chất, nước biển và sự va chạm có thể ảnh hưởng đến bề mặt, cấu trúc cũng như một số loại đá. Khi tháo, bạn chỉ cần lau nhẹ bằng khăn mềm sạch khô và cất riêng từng món; mình có thể kiểm tra hướng dẫn vệ sinh chi tiết cho mẫu của bạn.",
+      "check": "Không khuyên ngâm tẩy đại trà."
+    },
+    {
+      "id": "s08",
+      "type": "Chăm sóc",
+      "title": "Có dùng máy siêu âm không?",
+      "intent": "Ngăn xử lý sai với đá nhạy cảm",
+      "reply": "Mình không khuyến nghị dùng máy siêu âm tại nhà khi chưa kiểm tra chính xác loại đá, phương pháp xử lý và kết cấu sản phẩm. Một số viên đá hoặc phần đính đá có thể không phù hợp. Bạn gửi giúp mình tên mẫu hoặc mã sản phẩm, COLORA sẽ hướng dẫn cách vệ sinh an toàn hơn.",
+      "check": "Không mô tả ultrasonic phù hợp mọi đá."
+    },
+    {
+      "id": "s09",
+      "type": "Bảo hành",
+      "title": "Khách phát hiện đá lỏng",
+      "intent": "Ưu tiên an toàn, không quy lỗi sớm",
+      "reply": "Cảm ơn bạn đã báo ngay cho COLORA. Để tránh ảnh hưởng thêm đến viên đá và phần chấu, bạn vui lòng tạm ngừng đeo và cất sản phẩm riêng. Mình sẽ ghi nhận tình trạng, hỗ trợ kiểm tra kỹ thuật và cập nhật phương án sau khi đội ngũ xem xét cấu trúc thực tế.",
+      "check": "Không tự hứa miễn phí hay kết luận khách làm rơi."
+    },
+    {
+      "id": "s10",
+      "type": "Bảo hành",
+      "title": "Khách báo mất đá",
+      "intent": "Ghi nhận và đánh giá kỹ thuật",
+      "reply": "Mình rất tiếc vì trải nghiệm này đã ảnh hưởng đến bạn. COLORA sẽ tiếp nhận thông tin sản phẩm, thời điểm phát hiện và tình trạng phần đính đá để đội kỹ thuật xác minh nguyên nhân. Sau kiểm tra, chúng mình sẽ trao đổi rõ phương án sửa chữa, thay đá và chi phí nếu có trước khi thực hiện.",
+      "check": "Không quy trách nhiệm từ một ảnh duy nhất."
+    },
+    {
+      "id": "s11",
+      "type": "Đổi trả",
+      "title": "Khách không có video mở hộp",
+      "intent": "Tiếp nhận thay vì từ chối máy móc",
+      "reply": "Bạn không cần lo vì chưa có video mở hộp. COLORA vẫn sẽ ghi nhận vấn đề và cùng bạn đối chiếu thông tin đơn hàng, tình trạng sản phẩm cùng dữ liệu đóng gói/vận chuyển hiện có. Bạn có thể gửi hình ảnh và mô tả thực tế để chúng mình kiểm tra nhanh hơn nếu thuận tiện.",
+      "check": "Không đặt video unboxing thành điều kiện duy nhất."
+    },
+    {
+      "id": "s12",
+      "type": "Đổi trả",
+      "title": "Khách nhắn sau mốc 48 giờ",
+      "intent": "Không từ chối tự động quyền bắt buộc",
+      "reply": "Cảm ơn bạn đã thông tin. Mình sẽ tiếp nhận trường hợp của bạn và kiểm tra theo đúng loại vấn đề, thời điểm nhận hàng cùng chính sách áp dụng. Mốc thông báo hỗ trợ quá trình tra soát, nhưng COLORA vẫn cần xem xét đầy đủ tình trạng sản phẩm và quyền lợi liên quan trước khi phản hồi phương án.",
+      "check": "Phân biệt điều kiện đổi ý và lỗi hàng."
+    },
+    {
+      "id": "s13",
+      "type": "Giao hàng",
+      "title": "Đơn trễ dịp tặng quà",
+      "intent": "Cập nhật trung thực, tránh hứa chắc",
+      "reply": "Mình hiểu thời điểm nhận món quà rất quan trọng với bạn, và xin lỗi vì việc chậm trễ đã gây bất tiện. Mình sẽ kiểm tra ngay trạng thái chuẩn bị và vận chuyển, sau đó gửi bạn mốc cập nhật xác thực cùng các phương án khả thi để bạn chủ động sắp xếp.",
+      "check": "Không tự cam kết ngày đến hoặc hoàn phí."
+    },
+    {
+      "id": "s14",
+      "type": "Hậu mãi",
+      "title": "Hỏi thăm sau nhận hàng",
+      "intent": "Phát hiện vấn đề fit/cảm giác đeo",
+      "reply": "COLORA hy vọng món trang sức đã đến với bạn thật trọn vẹn. Mình chỉ muốn hỏi nhẹ liệu kích thước và cảm giác đeo có phù hợp không. Nếu có điểm nào bạn muốn điều chỉnh hoặc cần tìm hiểu thêm về cách chăm sóc, chúng mình luôn sẵn lòng hỗ trợ.",
+      "check": "Gửi qua kênh được phép; không upsell."
+    },
+    {
+      "id": "s15",
+      "type": "Hậu mãi",
+      "title": "Khách phản ánh thái độ tư vấn",
+      "intent": "Lắng nghe và xử lý cụ thể",
+      "reply": "Cảm ơn bạn đã dành thời gian cho COLORA biết trải nghiệm vừa rồi. Mình rất tiếc vì cách trao đổi chưa khiến bạn cảm thấy được lắng nghe. Nếu bạn sẵn lòng, mình muốn hiểu rõ thời điểm và nội dung khiến bạn khó chịu để chuyển tới người phụ trách và phản hồi bằng một hướng xử lý cụ thể.",
+      "check": "Không đòi khách giải thích lặp đi lặp lại."
+    },
+    {
+      "id": "s16",
+      "type": "Tin cậy",
+      "title": "Khách hỏi Certificate có phải GIA?",
+      "intent": "Phân biệt chứng nhận nội bộ và kiểm định độc lập",
+      "reply": "Certificate do COLORA phát hành xác nhận thông tin sản phẩm theo hồ sơ của thương hiệu; tài liệu này không đồng nghĩa với báo cáo giám định của GIA hoặc một phòng thí nghiệm độc lập. Nếu mẫu bạn quan tâm có báo cáo độc lập, chúng mình sẽ cung cấp đúng tên đơn vị và mã báo cáo tương ứng.",
+      "check": "Không gắn logo/claim GIA nếu không có bằng chứng."
+    },
+    {
+      "id": "s17",
+      "type": "Tư vấn",
+      "title": "Khách hỏi giới hạn mua mỗi danh mục",
+      "intent": "Không biến pilot thành chính sách công bố",
+      "reply": "COLORA đề cao những lựa chọn có cân nhắc và phù hợp với người đeo. Nếu một dòng sản phẩm có giới hạn số lượng hoặc điều kiện đặt mua riêng, chúng mình sẽ thông tin rõ trong trang sản phẩm hoặc điều khoản áp dụng. Mình có thể kiểm tra trực tiếp tình trạng của mẫu bạn quan tâm.",
+      "check": "Không tự áp dụng rule 90/180 ngày chưa phê duyệt."
+    },
+    {
+      "id": "s18",
+      "type": "Hậu mãi",
+      "title": "Kết thúc một case sửa chữa",
+      "intent": "Tóm tắt minh bạch và xác nhận khách đã nhận",
+      "reply": "COLORA xin cập nhật sản phẩm của bạn đã hoàn tất bước kiểm tra và xử lý theo phương án chúng mình đã trao đổi. Mình sẽ gửi lại thông tin những hạng mục đã thực hiện, hướng dẫn sử dụng sau chăm sóc và bước bàn giao tiếp theo. Cảm ơn bạn đã cho COLORA cơ hội chăm sóc món trang sức này.",
+      "check": "Chỉ gửi sau khi QC xác nhận và phương án thực tế hoàn tất."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "track": "all",
+      "lesson": "brand",
+      "prompt": "Triết lý Facets of Feeling nên được áp dụng trong tư vấn như thế nào?",
+      "options": [
+        "Gán màu xanh cho buồn, đỏ cho yêu",
+        "Để khách tự gắn ý nghĩa cho màu sắc",
+        "Luôn khuyến nghị viên đá đắt nhất",
+        "Giải thích màu sắc có tác dụng chữa bệnh"
+      ],
+      "correct": 1,
+      "why": "COLORA tôn trọng cách mỗi người diễn giải cảm xúc riêng.",
+      "critical": true
+    },
+    {
+      "id": 2,
+      "track": "all",
+      "lesson": "brand",
+      "prompt": "COLORA được định vị chính theo danh mục nào?",
+      "options": [
+        "Đá quý rời",
+        "Trang sức demi-fine với đá màu",
+        "Phụ kiện phong thủy",
+        "Trang sức bạc giá rẻ"
+      ],
+      "correct": 1,
+      "why": "Đá là thuộc tính của sản phẩm trang sức hoàn thiện.",
+      "critical": false
+    },
+    {
+      "id": 3,
+      "track": "all",
+      "lesson": "brand",
+      "prompt": "Khách chưa chắc có nên mua một mẫu nhẫn lớn. Phản ứng phù hợp?",
+      "options": [
+        "Gây áp lực vì gần hết hàng",
+        "Lắng nghe hoàn cảnh và gợi ý phương án phù hợp, kể cả chưa mua",
+        "Khẳng định mẫu sẽ hợp mọi ngón",
+        "Giảm giá ngay"
+      ],
+      "correct": 1,
+      "why": "Tư vấn có trách nhiệm ưu tiên sự phù hợp.",
+      "critical": false
+    },
+    {
+      "id": 4,
+      "track": "all",
+      "lesson": "journey",
+      "prompt": "Trong hành trình của COLORA, sau mua là giai đoạn nào?",
+      "options": [
+        "Kết thúc quan hệ",
+        "Bắt đầu ownership, care và quan hệ dài hạn",
+        "Chỉ thu thập review",
+        "Gửi quảng cáo hằng ngày"
+      ],
+      "correct": 1,
+      "why": "Post-purchase là điểm khởi đầu của clienteling dài hạn.",
+      "critical": false
+    },
+    {
+      "id": 5,
+      "track": "all",
+      "lesson": "journey",
+      "prompt": "Người mua quà không biết size. Cần làm gì?",
+      "options": [
+        "Hứa đổi size tất cả mẫu",
+        "Đặt ngay size trung bình",
+        "Tìm hiểu người đeo và kiểm tra khả năng resize từng mẫu",
+        "Yêu cầu CCCD người nhận"
+      ],
+      "correct": 2,
+      "why": "Khả năng chỉnh size phụ thuộc kết cấu.",
+      "critical": false
+    },
+    {
+      "id": 6,
+      "track": "all",
+      "lesson": "gemstone",
+      "prompt": "Đá tự nhiên có thể đã qua xử lý không?",
+      "options": [
+        "Không, natural luôn untreated",
+        "Có, natural và treated là hai thông tin khác nhau",
+        "Đã xử lý thì chắc chắn là nhựa",
+        "Không cần hỏi hồ sơ"
+      ],
+      "correct": 1,
+      "why": "Nguồn gốc và treatment phải được xác minh riêng.",
+      "critical": true
+    },
+    {
+      "id": 7,
+      "track": "all",
+      "lesson": "gemstone",
+      "prompt": "Mohs mô tả chủ yếu điều gì?",
+      "options": [
+        "Khả năng chịu va đập",
+        "Độ cứng chống trầy tương đối",
+        "Độ trong của đá",
+        "Giá trị thương mại"
+      ],
+      "correct": 1,
+      "why": "Mohs không thay thế đánh giá toughness.",
+      "critical": false
+    },
+    {
+      "id": 8,
+      "track": "all",
+      "lesson": "gemstone",
+      "prompt": "Đá Mohs 8 có đảm bảo không nứt không?",
+      "options": [
+        "Có, tuyệt đối",
+        "Chỉ khi hình oval",
+        "Không, độ dai, cấu trúc và va đập còn ảnh hưởng",
+        "Chỉ khi gắn bạc"
+      ],
+      "correct": 2,
+      "why": "Chống trầy khác chống nứt.",
+      "critical": false
+    },
+    {
+      "id": 9,
+      "track": "all",
+      "lesson": "gemstone",
+      "prompt": "Khách hỏi chiếc nhẫn có báo cáo GIA không, nhưng chỉ có certificate COLORA?",
+      "options": [
+        "Nói có vì đều là chứng nhận",
+        "Nói không cần chứng chỉ",
+        "Giải thích rõ chứng nhận nội bộ khác báo cáo độc lập",
+        "Gắn logo GIA vào ảnh"
+      ],
+      "correct": 2,
+      "why": "Không đánh đồng hai loại tài liệu.",
+      "critical": true
+    },
+    {
+      "id": 10,
+      "track": "all",
+      "lesson": "gemstone",
+      "prompt": "Điểm cần lưu ý khi tư vấn giác cắt pear?",
+      "options": [
+        "Mũi nhọn có thể cần bảo vệ tốt",
+        "Pear không thể nứt",
+        "Pear luôn sáng hơn round",
+        "Pear không cần chấu"
+      ],
+      "correct": 0,
+      "why": "Đầu nhọn nhạy cảm với tác động.",
+      "critical": false
+    },
+    {
+      "id": 11,
+      "track": "all",
+      "lesson": "gemstone",
+      "prompt": "Ảnh sản phẩm và đá thực tế có thể khác nhẹ vì sao?",
+      "options": [
+        "Luôn là hàng giả",
+        "Ánh sáng, góc nhìn, màn hình và đặc điểm viên đá",
+        "Do người mua tưởng tượng",
+        "Vì đá tự nhiên luôn đổi màu vĩnh viễn"
+      ],
+      "correct": 1,
+      "why": "Cần dùng ảnh/video thật đúng SKU để xác minh.",
+      "critical": false
+    },
+    {
+      "id": 12,
+      "track": "all",
+      "lesson": "care",
+      "prompt": "Bạc có thể xỉn dù có lớp hoàn thiện bảo vệ không?",
+      "options": [
+        "Không, bảo vệ tuyệt đối",
+        "Có, tùy môi trường, ma sát và cấu hình finish",
+        "Chỉ khi là bạc giả",
+        "Không bao giờ nếu đeo mỗi ngày"
+      ],
+      "correct": 1,
+      "why": "Lớp phủ không là cam kết vĩnh viễn.",
+      "critical": true
+    },
+    {
+      "id": 13,
+      "track": "all",
+      "lesson": "care",
+      "prompt": "Khách hỏi 930‰ theo bản nháp packaging. Câu trả lời đúng?",
+      "options": [
+        "Xác nhận 930‰ mọi SKU",
+        "Xác nhận 925‰ mọi SKU",
+        "Tra hồ sơ kim loại/QC theo đúng SKU trước khi xác nhận",
+        "Tránh trả lời mãi mãi"
+      ],
+      "correct": 2,
+      "why": "Bản nháp không thay thế hồ sơ thực tế.",
+      "critical": true
+    },
+    {
+      "id": 14,
+      "track": "all",
+      "lesson": "care",
+      "prompt": "Có thể dùng máy siêu âm cho mọi món trang sức đá màu?",
+      "options": [
+        "Có",
+        "Không, phải xem loại đá, treatment và setting",
+        "Có nếu dưới 30 giây",
+        "Có nếu đá tự nhiên"
+      ],
+      "correct": 1,
+      "why": "Một số loại đá và xử lý không phù hợp.",
+      "critical": false
+    },
+    {
+      "id": 15,
+      "track": "all",
+      "lesson": "care",
+      "prompt": "Khi thấy chấu lỏng nên khuyên khách làm gì?",
+      "options": [
+        "Tự siết bằng kìm",
+        "Tiếp tục đeo bình thường",
+        "Ngừng đeo, bảo quản riêng và liên hệ kiểm tra",
+        "Dùng keo dán"
+      ],
+      "correct": 2,
+      "why": "Ưu tiên tránh rơi hoặc hư hại thêm.",
+      "critical": true
+    },
+    {
+      "id": 16,
+      "track": "all",
+      "lesson": "privacy",
+      "prompt": "Nhân viên có thể yêu cầu CCCD để tư vấn mua nhẫn không?",
+      "options": [
+        "Có, mọi đơn hàng",
+        "Chỉ khi khách hỏi màu đá",
+        "Không, tránh thu giấy tờ không cần thiết",
+        "Chỉ nếu giá cao"
+      ],
+      "correct": 2,
+      "why": "Giảm thiểu dữ liệu nhạy cảm.",
+      "critical": true
+    },
+    {
+      "id": 17,
+      "track": "all",
+      "lesson": "privacy",
+      "prompt": "Giao dịch mua hàng có tự động đồng nghĩa đồng ý nhận email quảng cáo?",
+      "options": [
+        "Có",
+        "Không, tách thông báo giao dịch và marketing",
+        "Chỉ với đơn quà tặng",
+        "Chỉ với khách quay lại"
+      ],
+      "correct": 1,
+      "why": "Phải tôn trọng lựa chọn liên lạc.",
+      "critical": true
+    },
+    {
+      "id": 18,
+      "track": "care",
+      "lesson": "advisor",
+      "prompt": "Bước đầu tiên của tư vấn COLORA là gì?",
+      "options": [
+        "Gửi catalogue toàn bộ",
+        "Hỏi một câu để làm rõ mục đích mua",
+        "Tự chọn mẫu đắt nhất",
+        "Yêu cầu địa chỉ nhà"
+      ],
+      "correct": 1,
+      "why": "Mở đúng nhu cầu giảm quá tải thông tin.",
+      "critical": false
+    },
+    {
+      "id": 19,
+      "track": "care",
+      "lesson": "advisor",
+      "prompt": "Nên đề xuất bao nhiêu mẫu chính trong một lượt tư vấn?",
+      "options": [
+        "1–3 mẫu có lý do",
+        "Ít nhất 20 mẫu",
+        "Càng nhiều càng tốt",
+        "Chỉ một mẫu đắt nhất"
+      ],
+      "correct": 0,
+      "why": "Chọn lọc giúp khách quyết định.",
+      "critical": false
+    },
+    {
+      "id": 20,
+      "track": "care",
+      "lesson": "advisor",
+      "prompt": "Khách có ngân sách giới hạn. Phương án tốt nhất?",
+      "options": [
+        "Nhấn vào cảm giác tội lỗi",
+        "Tư vấn thiết kế phù hợp ngân sách và cách dùng",
+        "Khẳng định món rẻ không có ý nghĩa",
+        "Không trả lời"
+      ],
+      "correct": 1,
+      "why": "Tư vấn không ép chi tiêu.",
+      "critical": false
+    },
+    {
+      "id": 21,
+      "track": "care",
+      "lesson": "advisor",
+      "prompt": "Khách mua quà nhưng người nhận cần hỗ trợ. Không nên làm gì?",
+      "options": [
+        "Hỗ trợ care",
+        "Xác minh loại sản phẩm",
+        "Tiết lộ lịch sử thanh toán của người mua cho người nhận",
+        "Hướng dẫn fit"
+      ],
+      "correct": 2,
+      "why": "Tách quyền riêng tư người tặng/người nhận.",
+      "critical": true
+    },
+    {
+      "id": 22,
+      "track": "care",
+      "lesson": "resolution",
+      "prompt": "Khách báo đá rơi. Nhân viên nên kết luận?",
+      "options": [
+        "Do khách làm rơi",
+        "Do nhà sản xuất chắc chắn",
+        "Chưa kết luận, tiếp nhận và chuyển kiểm tra kỹ thuật",
+        "Từ chối ngay"
+      ],
+      "correct": 2,
+      "why": "Không thể quy trách nhiệm từ một ảnh.",
+      "critical": true
+    },
+    {
+      "id": 23,
+      "track": "care",
+      "lesson": "resolution",
+      "prompt": "Không có video mở hộp thì sao?",
+      "options": [
+        "Tự động từ chối",
+        "Vẫn tiếp nhận, dùng chứng cứ sẵn có để xác minh",
+        "Yêu cầu khách quay lại video",
+        "Hủy đơn"
+      ],
+      "correct": 1,
+      "why": "Video không nên là chứng cứ duy nhất.",
+      "critical": true
+    },
+    {
+      "id": 24,
+      "track": "care",
+      "lesson": "resolution",
+      "prompt": "Khách báo sai hàng sau 72 giờ. Cách xử lý?",
+      "options": [
+        "Chặn khách",
+        "Từ chối mọi quyền lợi",
+        "Tiếp nhận, kiểm tra chính sách đúng nhánh và quyền bắt buộc",
+        "Hoàn tiền ngay mà không kiểm tra"
+      ],
+      "correct": 2,
+      "why": "Không dùng mốc nội bộ để phủ nhận tất cả quyền lợi.",
+      "critical": true
+    },
+    {
+      "id": 25,
+      "track": "care",
+      "lesson": "resolution",
+      "prompt": "Một case khiếu nại cần có những trường nào?",
+      "options": [
+        "Chỉ lời xin lỗi",
+        "Mã case, owner, trạng thái, mốc cập nhật, bằng chứng và phương án",
+        "Chỉ mã voucher",
+        "Chỉ tên khách"
+      ],
+      "correct": 1,
+      "why": "Đảm bảo tính theo dõi và trách nhiệm.",
+      "critical": false
+    },
+    {
+      "id": 26,
+      "track": "care",
+      "lesson": "resolution",
+      "prompt": "Ai được hứa miễn phí sửa hoặc hoàn tiền?",
+      "options": [
+        "Mọi nhân viên khi khách phàn nàn",
+        "Người có thẩm quyền theo quy định được duyệt",
+        "Chỉ AI",
+        "Bất cứ người bán nào"
+      ],
+      "correct": 1,
+      "why": "Không tự cấp quyền lợi ngoài phân quyền.",
+      "critical": true
+    },
+    {
+      "id": 27,
+      "track": "care",
+      "lesson": "resolution",
+      "prompt": "Khách phản ánh trễ hàng dịp sinh nhật, nên làm gì trước?",
+      "options": [
+        "Cam kết giao ngày mai",
+        "Im lặng cho đến khi đến",
+        "Kiểm tra đơn, cập nhật sự thật và phương án",
+        "Đề xuất mua món thứ hai"
+      ],
+      "correct": 2,
+      "why": "Không tạo kỳ vọng sai.",
+      "critical": false
+    },
+    {
+      "id": 28,
+      "track": "care",
+      "lesson": "resolution",
+      "prompt": "Khách muốn resize nhẫn bất đối xứng có đá. Đáp án?",
+      "options": [
+        "Luôn resize được",
+        "Không bao giờ resize được",
+        "Yêu cầu kỹ thuật kiểm tra kết cấu và báo phương án/phí",
+        "Tự kéo size"
+      ],
+      "correct": 2,
+      "why": "Cần kiểm tra vị trí đá và kết cấu.",
+      "critical": false
+    },
+    {
+      "id": 29,
+      "track": "care",
+      "lesson": "resolution",
+      "prompt": "Khi case lỗi đang mở, có nên gửi tin nhắn mua thêm theo luồng T+30?",
+      "options": [
+        "Có, để tăng doanh số",
+        "Không, ưu tiên xử lý case và quyền liên hệ",
+        "Chỉ nếu đơn lớn",
+        "Có, luôn"
+      ],
+      "correct": 1,
+      "why": "Giữ sự tôn trọng khi khách đang gặp vấn đề.",
+      "critical": true
+    },
+    {
+      "id": 30,
+      "track": "care",
+      "lesson": "relationship",
+      "prompt": "Một lời nhắc sau 3–7 ngày có mục đích tốt nhất là?",
+      "options": [
+        "Bán ngay sản phẩm khác",
+        "Kiểm tra size, fit và cảm giác đeo",
+        "Yêu cầu đánh giá 5 sao",
+        "Bắt khách giới thiệu bạn"
+      ],
+      "correct": 1,
+      "why": "Nhịp chăm sóc giúp phát hiện sớm vấn đề.",
+      "critical": false
+    },
+    {
+      "id": 31,
+      "track": "care",
+      "lesson": "relationship",
+      "prompt": "Nên đo gì ngoài tốc độ phản hồi?",
+      "options": [
+        "Số emoji gửi mỗi ngày",
+        "Case phải mở lại, lỗi thông tin và CSAT",
+        "Số lần đề nghị upsell",
+        "Số tin nhắn tự động"
+      ],
+      "correct": 1,
+      "why": "Chất lượng giải quyết phản ánh trải nghiệm thật.",
+      "critical": false
+    },
+    {
+      "id": 32,
+      "track": "care",
+      "lesson": "privacy",
+      "prompt": "Nhập ticket khách hàng thật vào website học tập public này?",
+      "options": [
+        "Được vì có localStorage",
+        "Không, không có backend xác thực/phân quyền",
+        "Được nếu đổi tên",
+        "Được nếu đóng tab sau"
+      ],
+      "correct": 1,
+      "why": "Cổng này dùng dữ liệu giả định, không lưu case thật.",
+      "critical": true
+    },
+    {
+      "id": 33,
+      "track": "marketing",
+      "lesson": "claims",
+      "prompt": "Claim '100% đá không xử lý' nên dùng khi nào?",
+      "options": [
+        "Luôn luôn",
+        "Chỉ khi mọi viên đều có hồ sơ xác minh tương ứng",
+        "Khi đối thủ cũng nói",
+        "Khi ảnh chụp đẹp"
+      ],
+      "correct": 1,
+      "why": "Không suy diễn untreated từ natural.",
+      "critical": true
+    },
+    {
+      "id": 34,
+      "track": "marketing",
+      "lesson": "claims",
+      "prompt": "Bài viết về gemstone có thể khẳng định chữa bệnh?",
+      "options": [
+        "Có, nếu nhiều lượt xem",
+        "Không, tránh claims chữa bệnh không có chứng cứ",
+        "Chỉ trên Threads",
+        "Chỉ dưới dạng hashtag"
+      ],
+      "correct": 1,
+      "why": "Giữ ranh giới rõ giữa biểu tượng và công dụng.",
+      "critical": false
+    },
+    {
+      "id": 35,
+      "track": "marketing",
+      "lesson": "claims",
+      "prompt": "Dòng 'Product Passport đã kích hoạt' được công bố khi nào?",
+      "options": [
+        "Ngay trong mockup",
+        "Chỉ sau khi hệ thống thật hoạt động và QA",
+        "Khi thấy thương hiệu khác có",
+        "Khi chưa có QR"
+      ],
+      "correct": 1,
+      "why": "Không công bố tính năng chưa triển khai.",
+      "critical": false
+    },
+    {
+      "id": 36,
+      "track": "marketing",
+      "lesson": "claims",
+      "prompt": "Thông tin hoàn thiện nào được đưa lên PDP?",
+      "options": [
+        "Tất cả công nghệ từng thử nghiệm",
+        "Cấu hình đúng SKU đã QC xác nhận",
+        "Mọi con số từ packaging draft",
+        "Con số đẹp nhất"
+      ],
+      "correct": 1,
+      "why": "PDP phải phản ánh vật liệu/finish thực tế.",
+      "critical": true
+    },
+    {
+      "id": 37,
+      "track": "marketing",
+      "lesson": "claims",
+      "prompt": "Chỉnh ảnh đá màu nên ưu tiên gì?",
+      "options": [
+        "Thay sắc màu để bắt trend",
+        "Giữ trung thực màu và tỷ lệ, kèm điều kiện ánh sáng",
+        "Làm viên đá lớn hơn thực tế",
+        "Ẩn hết bao thể"
+      ],
+      "correct": 1,
+      "why": "Ảnh thật giúp giảm expectation gap.",
+      "critical": false
+    },
+    {
+      "id": 38,
+      "track": "marketing",
+      "lesson": "claims",
+      "prompt": "Đăng thông tin bảo hành trong một campaign nên?",
+      "options": [
+        "Tự chọn mức hấp dẫn hơn",
+        "Đối chiếu trang chính sách hiện hành",
+        "Công bố bảo hành trọn đời",
+        "Bỏ điều kiện quan trọng"
+      ],
+      "correct": 1,
+      "why": "Một nguồn sự thật cho thông tin thương mại.",
+      "critical": true
+    },
+    {
+      "id": 39,
+      "track": "marketing",
+      "lesson": "brand",
+      "prompt": "Caption đúng tone COLORA nhất?",
+      "options": [
+        "Đá này mang may mắn cho mọi người",
+        "Sắc màu gợi mở câu chuyện riêng của bạn",
+        "Không mua hôm nay sẽ tiếc",
+        "Chỉ người thành công mới đeo"
+      ],
+      "correct": 1,
+      "why": "Ngôn ngữ không áp đặt và không ép mua.",
+      "critical": false
+    },
+    {
+      "id": 40,
+      "track": "marketing",
+      "lesson": "privacy",
+      "prompt": "Có thể tải thông tin ngày kỷ niệm và số điện thoại của khách lên một sheet public để làm CRM không?",
+      "options": [
+        "Có nếu link khó đoán",
+        "Không, cần kiểm soát quyền và căn cứ xử lý",
+        "Có nếu khóa cột A",
+        "Có nếu dùng email nội bộ"
+      ],
+      "correct": 1,
+      "why": "Link public không phải bảo mật.",
+      "critical": true
+    },
+    {
+      "id": 41,
+      "track": "all",
+      "lesson": "journey",
+      "prompt": "Trong giai đoạn Trust, khách cần thông tin gì nhất?",
+      "options": [
+        "Chỉ video đẹp",
+        "Nguồn gốc, chất liệu, size, care, bảo hành và bằng chứng",
+        "Chỉ câu chuyện cảm xúc",
+        "Chỉ số lượt thích"
+      ],
+      "correct": 1,
+      "why": "Niềm tin xây bằng bằng chứng có thể kiểm chứng.",
+      "critical": false
+    },
+    {
+      "id": 42,
+      "track": "care",
+      "lesson": "resolution",
+      "prompt": "Khi giải quyết xong case, bước cuối quan trọng là gì?",
+      "options": [
+        "Đóng ngay không báo",
+        "Tóm tắt xử lý, xác nhận bàn giao và kiểm tra hậu xử lý",
+        "Gửi quảng cáo liên tục",
+        "Xóa toàn bộ ghi nhận"
+      ],
+      "correct": 1,
+      "why": "Đảm bảo khách thực sự nhận được giải pháp.",
+      "critical": false
+    }
+  ],
+  "policy": [
+    {
+      "name": "Bảo hành",
+      "url": "https://colora.vn/pages/chinh-sach-bao-hanh",
+      "desc": "Kiểm tra điều kiện, thời hạn và phạm vi theo phiên bản công bố đang có hiệu lực."
+    },
+    {
+      "name": "Đổi trả",
+      "url": "https://colora.vn/pages/chinh-sach-doi-tra",
+      "desc": "Phân biệt lỗi khi nhận, điều kiện đổi trả và các quyền lợi theo luật."
+    },
+    {
+      "name": "Giao hàng",
+      "url": "https://colora.vn/pages/chinh-sach-giao-hang",
+      "desc": "Kiểm tra thời gian chuẩn bị, vận chuyển và địa bàn áp dụng."
+    },
+    {
+      "name": "Size & Resizing",
+      "url": "https://colora.vn/pages/size-resizing",
+      "desc": "Không hứa khả năng chỉnh size khi chưa kiểm tra cấu trúc."
+    },
+    {
+      "name": "Phản ánh & khiếu nại",
+      "url": "https://colora.vn/pages/phan-anh-khieu-nai",
+      "desc": "Quy trình tiếp nhận, xử lý và thông tin liên hệ."
+    },
+    {
+      "name": "Quyền riêng tư",
+      "url": "https://colora.vn/pages/chinh-sach-bao-mat",
+      "desc": "Tuân thủ quyền chọn liên hệ, thu thập tối thiểu và bảo vệ dữ liệu."
+    }
+  ],
+  "links": [
+    {
+      "name": "GIA: Jewelry Care",
+      "url": "https://www.gia.edu/gia-news-research-tips-caring-jewelry"
+    },
+    {
+      "name": "GIA: Gemstone Encyclopedia",
+      "url": "https://www.gia.edu/gem-encyclopedia"
+    },
+    {
+      "name": "COLORA Website",
+      "url": "https://colora.vn/"
+    },
+    {
+      "name": "Zalo OA",
+      "url": "https://zalo.me/1257740887548898044"
+    }
+  ]
+};
