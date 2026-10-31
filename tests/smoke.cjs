@@ -121,7 +121,7 @@ assert.ok(JSON.parse(app.cache["colora-academy-v1-public"]).results.some(r=>r.mo
 console.log("PASS routes and three-step case simulation");
 assert.ok(app.route("roleplay").includes("Advisor Role-play"));
 assert.ok(app.click("[data-roleplay-start]",{roleplayStart:"stone-loose"}).includes("roleplay-draft"));
-assert.ok(app.click("[data-roleplay-reveal]",{}).includes("Gợi ý"));
+assert.ok(app.click("[data-roleplay-reveal]",{}).includes("roleplay-example"));
 assert.ok(app.click("[data-roleplay-eval]",{}).includes("điểm tự đánh giá"));
 console.log("PASS V2 product and role-play interfaces");
 
