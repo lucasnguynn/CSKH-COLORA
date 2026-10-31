@@ -7,9 +7,9 @@
   var D=window.COLORA_DATA;
   var ROOT=document.getElementById("main-content");
   var STORE_KEY="colora-academy-v1-public";
-  var state={role:"all",completed:[],results:[],quiz:null,lessonSearch:"",scriptSearch:"",scriptFilter:"Tất cả"};
+  var state={role:"all",completed:[],results:[],quiz:null,lessonSearch:"",scriptSearch:"",scriptFilter:"Tất cả",caseStudy:null};
   var scriptTypes=["Tất cả","Tư vấn","Đá quý","Chất liệu","Chăm sóc","Bảo hành","Đổi trả","Giao hàng","Hậu mãi","Tin cậy"];
-  var labels={home:"Tổng quan",learn:"Thư viện học tập",lesson:"Nội dung bài học",scripts:"Thư viện kịch bản",practice:"Luyện tập",exam:"Kiểm tra cuối",progress:"Tiến độ của tôi",resources:"Chính sách & nguồn"};
+  var labels={home:"Tổng quan",learn:"Thư viện học tập",lesson:"Nội dung bài học",scripts:"Thư viện kịch bản",cases:"Case Lab",case:"Tình huống thực hành",practice:"Luyện tập",exam:"Kiểm tra cuối",progress:"Tiến độ của tôi",resources:"Chính sách & nguồn"};
 
   function esc(x){return String(x==null?"":x).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
   function load(){try{var s=JSON.parse(localStorage.getItem(STORE_KEY)||"{}");if(D.roles.some(function(r){return r.id===s.role;}))state.role=s.role;if(Array.isArray(s.completed))state.completed=s.completed.filter(function(v){return typeof v==="string" && D.lessons.some(function(l){return l.id===v;});});if(Array.isArray(s.results))state.results=s.results.filter(function(x){return x && typeof x.percent==="number";}).slice(-30);}catch(e){}}
@@ -81,10 +81,24 @@
     ROOT.innerHTML='<div class="page">'+titleBlock(isExam?"FINAL ASSESSMENT":"PRACTICE SPACE",isExam?"Kiểm tra năng lực":"Luyện tập kiến thức",isExam?"Bài kiểm tra tổng hợp cho lộ trình "+roleObj().name+". Kết quả được lưu trên thiết bị hiện tại.":"Ôn luyện bằng câu hỏi có giải thích để học cách vận dụng thay vì chỉ ghi nhớ.")+'<div class="quiz-setup"><div class="quiz-explainer"><p class="eyebrow">'+(isExam?"ASSESSMENT":"PRACTICE")+' / '+esc(roleObj().name)+'</p><h2>'+(isExam?"Clarity builds confidence.":"Learn, reflect, improve.")+'</h2><p>'+(isExam?"Bài thi chọn ngẫu nhiên "+n+" câu từ ngân hàng kiến thức phù hợp lộ trình. Bạn có thể quay lại các câu trong lúc làm. Kết quả chỉ mang tính tham khảo nội bộ, không thay thế đánh giá thực hành do quản lý phê duyệt.":"Mỗi lượt 10 câu hỏi ngẫu nhiên. Bạn được xem đáp án và lý giải ngay sau khi chọn, sau đó tiếp tục với câu kế tiếp.")+'</p><button type="button" class="btn btn-navy" data-start-quiz="'+esc(mode)+'">'+(isExam?"Bắt đầu kiểm tra":"Bắt đầu luyện tập")+' &nbsp; ↗</button></div><aside class="quiz-rulebox"><p class="eyebrow">EVALUATION GUIDE</p><h3>Thông tin lượt học</h3><div class="rule-line"><span>Lộ trình</span><strong>'+esc(roleObj().name)+'</strong></div><div class="rule-line"><span>Số câu</span><strong>'+n+'</strong></div><div class="rule-line"><span>Ngưỡng đạt</span><strong>'+(isExam?"80%":"Không áp dụng")+'</strong></div><div class="rule-line"><span>Câu trọng yếu</span><strong>'+(isExam?"Không sai câu được chọn":"Có giải thích")+'</strong></div><div class="rule-line"><span>Lưu kết quả</span><strong>Trên trình duyệt</strong></div></aside></div></div>';
   }
   function shuffle(arr){var a=arr.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+
+  function prepareQuestion(q){
+    // Rotate answer positions per attempt; public source code still contains the question bank.
+    var positions=shuffle(q.options.map(function(_,i){return i;}));
+    return Object.assign({},q,{options:positions.map(function(i){return q.options[i];}),correct:positions.indexOf(q.correct)});
+  }
+  function drawQuestions(pool,mode,n){
+    if(mode!=="exam")return shuffle(pool).slice(0,n).map(prepareQuestion);
+    // Every examined track includes at least one question from each of its lessons.
+    var covered=visibleLessons().map(function(l){return shuffle(pool.filter(function(q){return q.lesson===l.id;}))[0];}).filter(Boolean);
+    var picked=new Set(covered.map(function(q){return q.id;}));
+    var rest=shuffle(pool.filter(function(q){return !picked.has(q.id);}));
+    return shuffle(covered.concat(rest.slice(0,Math.max(0,n-covered.length)))).slice(0,n).map(prepareQuestion);
+  }
   function startQuiz(mode){
     var pool=eligibleQ();
     var n=mode==="exam"?(state.role==="all"?15:18):10;
-    state.quiz={mode:mode,role:state.role,items:shuffle(pool).slice(0,Math.min(n,pool.length)),index:0,answers:{},done:false};
+    state.quiz={mode:mode,role:state.role,items:drawQuestions(pool,mode,Math.min(n,pool.length)),index:0,answers:{},done:false};
     renderQuiz();window.scrollTo(0,0);
   }
   function selected(q){return Object.prototype.hasOwnProperty.call(state.quiz.answers,q.id)?state.quiz.answers[q.id]:null;}
@@ -116,15 +130,15 @@
     var ls=visibleLessons(),exams=state.results.filter(function(r){return r.role===state.role&&r.mode==="exam";}),latest=exams.length?exams[exams.length-1]:null;
     var card='<div class="progress-card"><h3>Lộ trình '+esc(roleObj().name)+'</h3><p class="page-subtitle" style="margin:0 0 19px">Đánh dấu các chuyên đề đã thực sự đọc và nắm được nội dung.</p><div class="progress-list">'+ls.map(function(l){var done=state.completed.indexOf(l.id)>-1;return '<a class="progress-item" href="'+href("lesson/"+l.id)+'"><span class="progress-check '+(done?"done":"")+'">'+(done?"✓":"·")+'</span><span>'+esc(l.no)+' · '+esc(l.title)+'</span></a>';}).join("")+'</div><div class="rule-line"><span>Hoàn thành</span><strong>'+completedLessons()+'/'+ls.length+' chuyên đề</strong></div><div class="mini-progress"><span style="width:'+progressPct()+'%"></span></div></div>';
     var history=state.results.slice().reverse().filter(function(r){return r.role===state.role;}).slice(0,10);
-    var historyHtml=history.length?history.map(function(r){var date=new Date(r.at);return '<div class="progress-row"><span>'+(r.mode==="exam"?"Bài thi":"Luyện tập")+' · '+(isNaN(date.getTime())?"":date.toLocaleDateString("vi-VN"))+'</span><strong>'+r.percent+'%'+(r.mode==="exam"?(r.passed?" · Đạt":" · Chưa đạt"):"")+'</strong></div>';}).join(""):'<p class="page-subtitle">Chưa có kết quả. Bạn có thể bắt đầu từ phần luyện tập.</p>';
+    var historyHtml=history.length?history.map(function(r){var date=new Date(r.at);return '<div class="progress-row"><span>'+(r.mode==="exam"?"Bài thi":r.mode==="case"?"Case Lab":"Luyện tập")+' · '+(isNaN(date.getTime())?"":date.toLocaleDateString("vi-VN"))+'</span><strong>'+r.percent+'%'+(r.mode==="exam"?(r.passed?" · Đạt":" · Chưa đạt"):"")+'</strong></div>';}).join(""):'<p class="page-subtitle">Chưa có kết quả. Bạn có thể bắt đầu từ phần luyện tập.</p>';
     ROOT.innerHTML='<div class="page">'+titleBlock("YOUR LEARNING PATH","Tiến độ của tôi","Tiến độ được lưu trên thiết bị và trình duyệt hiện tại, không đồng bộ về công ty.")+'<div class="stats-grid"><div class="stat-card"><div><strong>'+progressPct()+'%</strong><p>TIẾN ĐỘ HOÀN THÀNH</p></div><span class="stat-line">◈</span></div><div class="stat-card"><div><strong>'+completedLessons()+'</strong><p>BÀI ĐÃ ĐÁNH DẤU</p></div><span class="stat-line">✓</span></div><div class="stat-card"><div><strong>'+(latest?latest.percent+"%":"—")+'</strong><p>KẾT QUẢ THI GẦN NHẤT</p></div><span class="stat-line">✦</span></div></div><div class="progress-layout">'+card+'<div class="progress-card"><h3>Lịch sử kiểm tra</h3>'+historyHtml+'<div class="progress-actions">'+btn("Làm bài thi","exam","btn-navy")+'<button type="button" class="btn btn-ghost" data-export-progress="1">Xuất tiến độ (JSON)</button></div><p class="source-line">Dữ liệu này không xác minh danh tính, không phải chứng chỉ nhân sự và không phù hợp để quản trị hồ sơ đào tạo chính thức.</p><div class="rule-line" style="margin-top:25px"><span>Xóa dữ liệu học trên trình duyệt này</span><button type="button" class="btn btn-sm btn-ghost" data-clear-progress="1">Xóa tất cả</button></div></div></div></div>';
   }
   function notFound(){ROOT.innerHTML='<div class="page"><div class="empty-state"><strong>Không tìm thấy trang.</strong><p>Nội dung này có thể đã được di chuyển.</p>'+btn("Về tổng quan","home","btn-navy")+'</div></div>';}
   function navUpdate(page){document.querySelectorAll(".nav-link").forEach(function(a){var active=a.dataset.page===page||(page==="lesson"&&a.dataset.page==="learn");a.classList.toggle("active",active);if(active)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current");});document.getElementById("breadcrumb-label").textContent=labels[page]||"Academy";document.getElementById("role-select").value=state.role;}
   function closeMenu(){document.getElementById("sidebar").classList.remove("open");var shade=document.getElementById("mobile-shade");shade.hidden=true;document.getElementById("menu-toggle").setAttribute("aria-expanded","false");}
-  function render(){var parts=(location.hash||"#/home").replace(/^#\//,"").split("/");var page=parts[0]||"home";navUpdate(page);if(page==="home")home();else if(page==="learn")learn();else if(page==="lesson")lesson(parts[1]);else if(page==="scripts")scripts();else if(page==="resources")resources();else if(page==="progress")progress();else if(page==="practice"||page==="exam"){if(state.quiz&&state.quiz.mode===page&&!state.quiz.done&&state.quiz.role===state.role)renderQuiz();else quizSetup(page);}else notFound();closeMenu();window.scrollTo(0,0);}
+  function render(){var parts=(location.hash||"#/home").replace(/^#\//,"").split("/");var page=parts[0]||"home";navUpdate(page);if(page==="home")home();else if(page==="learn")learn();else if(page==="lesson")lesson(parts[1]);else if(page==="scripts")scripts();else if(page==="cases")caseLibrary();else if(page==="case")caseDetail(parts[1]);else if(page==="resources")resources();else if(page==="progress")progress();else if(page==="practice"||page==="exam"){if(state.quiz&&state.quiz.mode===page&&!state.quiz.done&&state.quiz.role===state.role)renderQuiz();else quizSetup(page);}else notFound();closeMenu();window.scrollTo(0,0);}
   function navigate(page){location.hash=href(page);if(location.hash===href(page))render();}
-  function setRole(role){if(!D.roles.some(function(r){return r.id===role;}))return;state.role=role;state.quiz=null;save();render();toast("Đã chuyển sang lộ trình "+roleObj().name);}
+  function setRole(role){if(!D.roles.some(function(r){return r.id===role;}))return;state.role=role;state.quiz=null;state.caseStudy=null;save();render();toast("Đã chuyển sang lộ trình "+roleObj().name);}
   function downloadProgress(){
     var exportObj={app:"COLORA Client Care Academy",version:D.version,role:state.role,completedLessonIds:state.completed,results:state.results,exportedAt:new Date().toISOString(),notice:"Local-only training progress, not verified employee records."};
     var b=new Blob([JSON.stringify(exportObj,null,2)],{type:"application/json"});var u=URL.createObjectURL(b);var a=document.createElement("a");a.href=u;a.download="colora-academy-progress.json";document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u);},250);toast("Đã xuất tệp tiến độ.");
