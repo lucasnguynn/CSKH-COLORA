@@ -1618,12 +1618,11 @@ window.COLORA_DATA = {
       "prompt": "Đánh giá hiệu quả nội dung nên thêm thước đo nào ngoài CTR?",
       "options": [
         "Tổng số icon đẹp",
-        "Số hashtag",
         "Thời lượng font hiển thị",
         "Khiếu nại sai màu/kích thước và tỷ lệ hoàn trả",
         "Tần suất AI render"
       ],
-      "correct": 3,
+      "correct": 2,
       "why": "Chất lượng kỳ vọng sau mua quan trọng như click.",
       "critical": false
     }
