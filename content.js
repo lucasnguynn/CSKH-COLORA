@@ -211,7 +211,7 @@ window.COLORA_DATA = {
         },
         {
           "h": "Mốc công bố và mốc nội bộ",
-          "p": "Tài liệu COLORA V1 tham chiếu bảo hành 24 tháng với lỗi thuộc trách nhiệm vật liệu/kết cấu/chế tác; các mốc kiểm tra và sửa chữa là theo chính sách đăng trên website tại thời điểm rà soát. Trước khi cam kết bất cứ mốc nào, kiểm tra chính sách mới nhất và tình trạng case cụ thể. Không tự mở rộng hay rút ngắn quyền lợi."
+          "p": "Bản đào tạo trước có tham chiếu mốc bảo hành 24 tháng, nhưng các trang chính sách trên colora.vn hiện chuyển đến trang Coming Soon nên không thể xác minh công khai mốc này. Nhân viên chỉ được xác nhận thời hạn, phạm vi, điều kiện và phí khi có bản chính sách COLORA đã phê duyệt, có ngày hiệu lực và hồ sơ đơn hàng. Nếu chưa tiếp cận được, tiếp nhận trường hợp, báo rõ đang xác minh, không tự hứa hoặc tự từ chối quyền lợi."
         },
         {
           "h": "Một người chịu trách nhiệm",
@@ -283,7 +283,7 @@ window.COLORA_DATA = {
         },
         {
           "h": "Một nguồn sự thật cho chính sách",
-          "p": "Tài liệu đào tạo có thể tóm tắt bảo hành, giao hàng và đổi trả; trang chính sách công khai được phê duyệt mới là nơi tư vấn viên và marketing phải đối chiếu. Khi có thay đổi, cập nhật cùng lúc PDP, FAQ, email và kịch bản."
+          "p": "Tài liệu đào tạo có thể tóm tắt bảo hành, giao hàng và đổi trả; bản chính sách đã được COLORA phê duyệt, có ngày hiệu lực và có thể truy cập qua kênh được phân quyền mới là nguồn phải đối chiếu. Khi có thay đổi, cập nhật cùng lúc PDP, FAQ, email và kịch bản."
         }
       ],
       "checks": [
@@ -1152,5 +1152,291 @@ window.COLORA_DATA = {
       "name": "Zalo OA",
       "url": "https://zalo.me/1257740887548898044"
     }
-  ]
+  ],
+  "cases": [
+  {
+    "id": "loose-stone",
+    "title": "Viên đá có dấu hiệu lỏng",
+    "category": "Bảo hành & an toàn",
+    "level": "Nâng cao",
+    "roles": [
+      "care"
+    ],
+    "time": 12,
+    "scenario": "Một khách nhận chiếc nhẫn đá pear khoảng hai tuần trước, nay nhận thấy viên đá chính có cảm giác chuyển động nhẹ. Khách sợ rơi đá và bực vì sản phẩm mới mua. Khách nhắn qua Zalo vào buổi tối.",
+    "goal": "Ưu tiên an toàn, giữ một đầu mối và đưa vấn đề đến QC không quy trách nhiệm trước.",
+    "steps": [
+      {
+        "question": "Phản hồi đầu tiên nên ưu tiên điều gì?",
+        "choices": [
+          "Xin lỗi vì sự bất tiện, khuyên tạm ngừng đeo và cất riêng, xin mã đơn để chuyển kỹ thuật.",
+          "Xác nhận lỗi sản xuất và hứa đổi sản phẩm mới ngay vì nhẫn còn mới.",
+          "Nói khách thử ấn nhẹ viên đá để kiểm tra mức lỏng, rồi gửi video nếu vẫn vậy."
+        ],
+        "best": 0,
+        "why": "Không kết luận nguyên nhân trước QC. Một viên đá lỏng cần được ngừng sử dụng; không hướng dẫn khách tác động lên chấu.",
+        "risk": "Khi có dấu hiệu mất an toàn, hướng dẫn tránh sử dụng trước."
+      },
+      {
+        "question": "Khách hỏi có miễn phí hoàn toàn không. Cách phản hồi?",
+        "choices": [
+          "Bảo hành 24 tháng nghĩa là luôn miễn phí mọi hư hại.",
+          "Nói COLORA cần kiểm tra tình trạng và điều khoản hiện hành trước khi xác nhận trách nhiệm và phí.",
+          "Từ chối vì khách đã đeo khoảng hai tuần."
+        ],
+        "best": 1,
+        "why": "Điều kiện, nguyên nhân và quyền lợi cần được kiểm tra. Website chính sách hiện ở sau trang Coming Soon nên càng không được tự công bố mốc chưa duyệt.",
+        "risk": "Không đưa lời hứa tài chính hoặc kết luận lỗi khi chưa có thẩm quyền."
+      },
+      {
+        "question": "Khách đã gửi ảnh và mã đơn. Bước vận hành tiếp theo?",
+        "choices": [
+          "Xin khách nhắn lại nhiều lần mỗi khi cần cập nhật.",
+          "Mở case có owner, hẹn mốc cập nhật xác thực, chuyển ảnh và hồ sơ sản phẩm cho QC.",
+          "Chốt case vì khách đã biết ngừng đeo."
+        ],
+        "best": 1,
+        "why": "Một người chịu trách nhiệm xuyên suốt và lịch cập nhật rõ giúp khách không phải giải thích lại.",
+        "risk": "Luôn ghi owner, trạng thái và bước tiếp theo."
+      }
+    ]
+  },
+  {
+    "id": "color-difference",
+    "title": "Màu đá khác hình ảnh",
+    "category": "Gemstone & kỳ vọng",
+    "level": "Trung cấp",
+    "roles": [
+      "care",
+      "marketing"
+    ],
+    "time": 10,
+    "scenario": "Khách gửi ảnh chiếc dây chuyền đá màu dưới đèn trong phòng, nói sắc đá nhạt hơn ảnh website. Khách yêu cầu COLORA trả lời sản phẩm có đúng đá tự nhiên không.",
+    "goal": "Tách biểu hiện màu dưới ánh sáng, thông tin đá theo SKU và khả năng sai lệch quảng cáo.",
+    "steps": [
+      {
+        "question": "Phản hồi phù hợp nhất khi khách nói màu đá không giống ảnh?",
+        "choices": [
+          "Nói đá tự nhiên luôn khác hình nên không được đổi.",
+          "Ghi nhận khác biệt; hỏi điều kiện ánh sáng, kiểm tra ảnh/video đúng SKU và hồ sơ chất liệu đá.",
+          "Khuyên tăng độ sáng màn hình để thấy sản phẩm giống ảnh."
+        ],
+        "best": 1,
+        "why": "Khác biệt màu có thể đến từ ánh sáng, nhưng cũng cần loại trừ vấn đề mô tả/đóng hàng sai.",
+        "risk": "Không dùng lý do 'tự nhiên' để phủ nhận mọi khiếu nại."
+      },
+      {
+        "question": "Chưa có hồ sơ treatment của đúng viên đá. Có thể nói điều gì?",
+        "choices": [
+          "Đây chắc chắn là đá tự nhiên 100% không xử lý.",
+          "Không kết luận treatment; nói sẽ xác minh hồ sơ và phản hồi bằng thông tin cụ thể.",
+          "Nói mọi đá màu đều được nhiệt luyện."
+        ],
+        "best": 1,
+        "why": "Natural, treatment và synthetic là các thuộc tính khác nhau và cần bằng chứng.",
+        "risk": "Không khẳng định untreated khi chưa có hồ sơ."
+      },
+      {
+        "question": "Marketing nhận thấy bộ ảnh quá rực so với video ánh sáng tự nhiên. Hành động?",
+        "choices": [
+          "Giữ ảnh vì tỷ lệ click cao.",
+          "Tắt hết thông tin đá khỏi PDP.",
+          "Đối chiếu màu với mẫu thật, chỉnh nội dung theo thực tế và bổ sung điều kiện ánh sáng."
+        ],
+        "best": 2,
+        "why": "Sự nhất quán giữa mô tả và trải nghiệm vật lý giảm rủi ro thất vọng sau mua.",
+        "risk": "Không đánh đổi độ trung thực lấy vẻ ngoài hấp dẫn."
+      }
+    ]
+  },
+  {
+    "id": "gift-privacy",
+    "title": "Người nhận quà yêu cầu hóa đơn",
+    "category": "Quà tặng & dữ liệu",
+    "level": "Nâng cao",
+    "roles": [
+      "care"
+    ],
+    "time": 12,
+    "scenario": "Một khách tặng vòng tay COLORA cho người yêu. Người nhận liên hệ xin giá, chi tiết thanh toán và số điện thoại người mua để đổi size.",
+    "goal": "Hỗ trợ người đeo mà không tiết lộ thông tin của người tặng.",
+    "steps": [
+      {
+        "question": "Điểm nào có thể hỗ trợ trước mà không cần tiết lộ dữ liệu cá nhân?",
+        "choices": [
+          "Hướng dẫn đo cổ tay và kiểm tra khả năng điều chỉnh của đúng mẫu.",
+          "Chuyển ngay ảnh hóa đơn và thông tin giao dịch.",
+          "Công bố số điện thoại người mua để hai người tự giải quyết."
+        ],
+        "best": 0,
+        "why": "Hướng dẫn kích thước và chăm sóc theo sản phẩm có thể cung cấp mà không tiết lộ giao dịch.",
+        "risk": "Không nhầm quyền sở hữu món quà với quyền truy cập dữ liệu của người tặng."
+      },
+      {
+        "question": "Khách tiếp tục yêu cầu chứng từ có giá tiền. Phương án?",
+        "choices": [
+          "Tự động cung cấp vì họ đang cầm món quà.",
+          "Xác minh quyền truy cập và xin chấp thuận phù hợp từ người mua khi cần; không tự công bố thanh toán.",
+          "Nói COLORA sẽ không hỗ trợ gì nữa."
+        ],
+        "best": 1,
+        "why": "Chứng từ có thể chứa thông tin riêng tư. Cần quy trình xác minh/ủy quyền.",
+        "risk": "Không tiết lộ thông tin người mua chỉ dựa vào việc có sản phẩm trong tay."
+      },
+      {
+        "question": "Nếu sản phẩm cần chỉnh size, thông tin nên thu thập?",
+        "choices": [
+          "Chỉ dữ liệu cần xử lý và phương thức liên lạc phù hợp, giải thích mục đích.",
+          "CCCD của cả hai người bất kể trường hợp.",
+          "Toàn bộ lịch sử mua sắm của người tặng."
+        ],
+        "best": 0,
+        "why": "Nguyên tắc giảm thiểu dữ liệu áp dụng cả với quà tặng.",
+        "risk": "Không thu dữ liệu nhạy cảm không cần thiết."
+      }
+    ]
+  },
+  {
+    "id": "missing-unboxing",
+    "title": "Hàng lỗi không có video mở hộp",
+    "category": "Đổi trả & giải quyết",
+    "level": "Nâng cao",
+    "roles": [
+      "care"
+    ],
+    "time": 12,
+    "scenario": "Khách nói khóa bông tai có vấn đề sau khi nhận hàng 3 ngày. Khách không quay video mở hộp và lo bị từ chối hỗ trợ.",
+    "goal": "Tránh từ chối máy móc theo bằng chứng duy nhất và xác minh case đúng quy trình.",
+    "steps": [
+      {
+        "question": "Cách tiếp nhận ban đầu?",
+        "choices": [
+          "Từ chối vì thiếu video và quá 48 giờ.",
+          "Ghi nhận vấn đề, hỏi mã đơn, mô tả và ảnh nếu thuận tiện; đối chiếu bằng chứng hiện có.",
+          "Yêu cầu quay lại video mở hộp mô phỏng."
+        ],
+        "best": 1,
+        "why": "Thông tin bổ sung hỗ trợ xác minh, nhưng không thể chỉ dựa trên việc có video.",
+        "risk": "Không tự coi việc thiếu video là lý do loại trừ mọi quyền lợi."
+      },
+      {
+        "question": "Khách nói khóa không an toàn. Hướng dẫn?",
+        "choices": [
+          "Tạm ngừng đeo, tránh tự bẻ/chỉnh, chờ kỹ thuật đánh giá.",
+          "Đeo thử thêm vài ngày để chứng minh có lỗi.",
+          "Tự dùng kìm để bẻ khóa."
+        ],
+        "best": 0,
+        "why": "Có dấu hiệu mất an toàn cần ngừng sử dụng trước.",
+        "risk": "Không chỉ dẫn sửa chữa tại nhà."
+      },
+      {
+        "question": "Chưa rõ chính sách đổi trả hiện hành do web Coming Soon. Câu cam kết nào hợp lý?",
+        "choices": [
+          "Bảo đảm hoàn tiền toàn bộ ngay vì đã báo lỗi.",
+          "Không nhận bất cứ trường hợp nào sau 48 giờ.",
+          "Tiếp nhận đầy đủ, xác minh điều khoản có hiệu lực và quyền lợi bắt buộc trước khi thông báo phương án."
+        ],
+        "best": 2,
+        "why": "Cần phân biệt yêu cầu đổi ý với lỗi hàng và căn cứ pháp lý/điều khoản.",
+        "risk": "Chưa xác minh chính sách thì chưa thể từ chối hoặc hứa quyền lợi."
+      }
+    ]
+  },
+  {
+    "id": "tarnish",
+    "title": "Bề mặt bạc đổi màu sau sử dụng",
+    "category": "Chất liệu & chăm sóc",
+    "level": "Trung cấp",
+    "roles": [
+      "care",
+      "marketing"
+    ],
+    "time": 10,
+    "scenario": "Khách phản ánh chiếc vòng có vùng tối màu và cho rằng COLORA từng quảng bá 'không xỉn'. Hồ sơ SKU hiện chưa xác nhận loại bạc và cấu trúc lớp phủ.",
+    "goal": "Không nói quá về lớp phủ, phân biệt dấu hiệu sử dụng với khả năng có lỗi hoàn thiện.",
+    "steps": [
+      {
+        "question": "Cách phản hồi đúng khi chưa có hồ sơ vật liệu SKU?",
+        "choices": [
+          "Khẳng định mọi vòng COLORA dùng GENIA276 930‰.",
+          "Xin ảnh, mã sản phẩm, điều kiện sử dụng và chuyển tra cấu hình vật liệu/finish thực tế.",
+          "Nói chắc đó là lỗi sử dụng nên khách tự chịu."
+        ],
+        "best": 1,
+        "why": "Không lấy thông số từ bản thảo thành quy cách vật liệu của mọi SKU.",
+        "risk": "Hồ sơ kỹ thuật từng SKU là nguồn duy nhất để xác nhận thông số."
+      },
+      {
+        "question": "Khách hỏi có được ngâm dung dịch tẩy bạc không?",
+        "choices": [
+          "Có, ngâm bất kỳ món có đá màu.",
+          "Không tự khuyến nghị ngâm/tẩy nếu chưa xác minh loại đá và treatment; ưu tiên lau nhẹ sạch khô.",
+          "Dùng siêu âm công suất cao để sạch nhanh."
+        ],
+        "best": 1,
+        "why": "Một số loại đá, lớp phủ và phương pháp xử lý không tương thích với hóa chất/siêu âm.",
+        "risk": "Không tư vấn tẩy đại trà."
+      },
+      {
+        "question": "Marketing đang dùng câu 'không bao giờ xỉn'. Nên làm gì?",
+        "choices": [
+          "Giữ câu vì tăng chuyển đổi.",
+          "Chỉ đổi sang 'xỉn sau 100 năm'.",
+          "Gỡ claim tuyệt đối, thay bằng mô tả có chứng cứ và hướng dẫn chăm sóc."
+        ],
+        "best": 2,
+        "why": "Lời hứa tuyệt đối có thể tạo kỳ vọng sai và tăng xung đột hậu mãi.",
+        "risk": "Không dùng claims không thể kiểm chứng."
+      }
+    ]
+  },
+  {
+    "id": "rush-gift",
+    "title": "Đơn hàng trễ ngày kỷ niệm",
+    "category": "Giao hàng & cảm xúc",
+    "level": "Trung cấp",
+    "roles": [
+      "care"
+    ],
+    "time": 10,
+    "scenario": "Người mua đặt nhẫn để tặng vào ngày kỷ niệm. Đơn vận chuyển chưa có mốc giao chắc chắn; khách vừa nhắn 'Nếu không đến mai thì tôi không cần nữa'.",
+    "goal": "Ưu tiên thông tin thật, phương án khả thi và quyền quyết định của khách.",
+    "steps": [
+      {
+        "question": "Bước đầu hợp lý?",
+        "choices": [
+          "Hứa chắc hàng sẽ đến trước 18 giờ hôm sau.",
+          "Ghi nhận tầm quan trọng của dịp tặng, xin lỗi vì bất tiện, kiểm tra trạng thái và hẹn mốc cập nhật xác thực.",
+          "Nói khách nên đặt sớm hơn."
+        ],
+        "best": 1,
+        "why": "Đồng cảm phải đi cùng cập nhật có căn cứ, không hứa vô điều kiện.",
+        "risk": "Không phát sinh cam kết vận chuyển thiếu xác nhận."
+      },
+      {
+        "question": "Đối tác vận chuyển chưa xác nhận giao mai. Nói gì?",
+        "choices": [
+          "Trình bày chưa có xác nhận, đưa lựa chọn thực tế nếu đã kiểm tra nội bộ.",
+          "Gửi tin nhắn '100% kịp' để giữ khách.",
+          "Đợi hàng đến rồi mới phản hồi."
+        ],
+        "best": 0,
+        "why": "Khách cần quyết định dựa trên sự thật và lựa chọn có thể thực hiện.",
+        "risk": "Không che giấu độ bất định về thời gian."
+      },
+      {
+        "question": "Khách yêu cầu hủy/hoàn tiền. Cách xử lý?",
+        "choices": [
+          "Tự hoàn tiền khi chưa có quyền.",
+          "Từ chối vì đây là quà tặng.",
+          "Kiểm tra trạng thái đơn, điều khoản và thẩm quyền xử lý; cập nhật phương án hủy/hoàn cụ thể."
+        ],
+        "best": 2,
+        "why": "Cần đối chiếu quy trình, trạng thái đơn và phạm vi phê duyệt.",
+        "risk": "Không hứa bồi hoàn vượt thẩm quyền."
+      }
+    ]
+  }
+]
 };
