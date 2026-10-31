@@ -2,16 +2,17 @@
 
 **COLORA - COLOR YOUR AURA**
 
-Static training website for foundational client-care knowledge, gemstone literacy, after-sales conversations and scenario-based assessment. Built for the COLORA team and adapted from the COLORA Client Care System V1.0 (31.10.2026).
+Static training website for foundational client-care knowledge, gemstone literacy, after-sales conversations and scenario-based assessment. Built for the COLORA team and adapted from the COLORA Client Care System V1.0 (31.10.2026). Academy release V1.1 is an auditable public learning prototype, not an employee certification system.
 
 ## Features
 
 - Responsive COLORA design using ivory, navy and gold; Cormorant Garamond display and Open Sans body.
 - Three tracks: Nền tảng, Client Advisor, Marketing.
-- Nine learning modules, 18 situational scripts and 42 MCQ questions with explanations.
+- Nine microlearning modules (43 minutes of estimated reading/reflection), 18 situational response scripts and 42 MCQ questions with explanations.
+- Six multi-step case simulations (18 decisions total) with rationale, safety notes and self-review.
 - Instant-feedback practice: 10 random questions per attempt.
-- Final assessment: 15 questions for foundation; 18 for the other tracks. Pass rule is at least 80% AND no incorrectly answered selected critical question.
-- Local-only lesson completion, exam history and JSON progress export.
+- Final assessment: 15 questions for foundation; 18 for the other tracks, with at least one question per module and shuffled answer positions. The current practice threshold is at least 80% AND no incorrectly answered selected critical question. This is a self-study measure, not a validated competence test.
+- Self-reported 'read' markers, local-only quiz and case history, and JSON progress export.
 - Search for lessons and scripts, with quick links to official COLORA policies.
 - No framework, npm, backend or external tracking.
 
@@ -62,7 +63,7 @@ Pages must be enabled in settings. The workflow alone does not guarantee the web
 - Complaints: https://colora.vn/pages/phan-anh-khieu-nai
 - Privacy: https://colora.vn/pages/chinh-sach-bao-mat
 
-Verify these references and the latest policy version before using them with customers. This training website never overrides public policies or applicable consumer law. Do not copy unapproved draft metal fineness, gemstone treatment, coating specifications or services into customer communication.
+**Audit finding (31 Oct 2026):** all six COLORA policy links redirected to the password-gated Coming Soon page; they were not publicly verifiable. Employees need an approved, dated internal copy of each policy before making promises about warranty, returns, repair, delivery or refunds. Verify these references and the latest policy version before using them with customers. This training website never overrides public policies or applicable consumer law. Do not copy unapproved draft metal fineness, gemstone treatment, coating specifications or services into customer communication.
 
 ## Pre-release review
 
@@ -74,3 +75,12 @@ Verify these references and the latest policy version before using them with cus
 - [ ] Decide whether a public educational website is appropriate or a private authenticated LMS is needed.
 
 © COLORA.
+## Follow-up audit backlog
+
+- [ ] Review and approve specific policy versions and embed a version/date/source owner.
+- [ ] Replace word-only lessons with deep SKU cards, photos, verified materials, gem treatment disclosures and working micro-assessments.
+- [ ] Improve question discrimination: replace obvious distractors, validate question quality, calibrate the hard-fail critical rule and test with real staff.
+- [ ] Add rubric-based role plays and human review before recognizing independent client-advisor competence.
+- [ ] Supply the actual COLORA vector logo; currently the portal uses a text wordmark, not a fabricated vector identity.
+- [ ] Move to a private, access-controlled LMS to centralize authenticated results (rather than browser storage) if the academy is for formal employee training.
+- [ ] Run automated browser/device accessibility checks after each deployment.
