@@ -2,14 +2,16 @@
 
 **COLORA - COLOR YOUR AURA**
 
-Static training website for foundational client-care knowledge, gemstone literacy, after-sales conversations and scenario-based assessment. Built for the COLORA team and adapted from the COLORA Client Care System V1.0 (31.10.2026). Academy release V1.1 is an auditable public learning prototype, not an employee certification system.
+Static training website for foundational client-care knowledge, gemstone literacy, after-sales conversations and scenario-based assessment. Built for the COLORA team and adapted from the COLORA Client Care System V1.0 (31.10.2026). Academy V2.0 expands the public learning prototype with research-backed stone reference, a Product Evidence Gate and written role-play. It is NOT a verified inventory, private CRM or employee certification system.
 
 ## Features
 
 - Responsive COLORA design using ivory, navy and gold; Cormorant Garamond display and Open Sans body.
 - Three tracks: Nền tảng, Client Advisor, Marketing.
-- Nine microlearning modules (43 minutes of estimated reading/reflection), 18 situational response scripts and 42 MCQ questions with explanations.
+- 13 microlearning modules, 18 situational response scripts and 66 MCQ questions with explanations.
 - Six multi-step case simulations (18 decisions total) with rationale, safety notes and self-review.
+- Public Product Intelligence: 10 GIA-referenced gem guides, seven cut-shape schematics, and seven SKU evidence areas. **None represents confirmed COLORA stock.**
+- Advisor Role-play: three fictional client scenarios with free-writing practice, six-item weighted self-check rubric, model answer comparison and NO data upload.
 - Instant-feedback practice: 10 random questions per attempt.
 - Final assessment: 15 questions for foundation; 18 for the other tracks, with at least one question per module and shuffled answer positions. The current practice threshold is at least 80% AND no incorrectly answered selected critical question. This is a self-study measure, not a validated competence test.
 - Self-reported 'read' markers, local-only quiz and case history, and JSON progress export.
@@ -48,6 +50,8 @@ Pages must be enabled in settings. The workflow alone does not guarantee the web
 ## File organization
 
 - content.js: training modules, scripts, questions and reference URLs. The correct answer index is zero-based (0 denotes the first option); critical questions require correct responses to pass the exam.
+- intelligence.js: cited gemstone educational reference, cut guide, evidence gate and written practice rubric; not live inventory.
+- schemas/sku-evidence.schema.json: draft/approval evidence data model for future authenticated Product Information Management.
 - app.js: navigation, quiz engine, assessment, UI rendering and locally stored progress.
 - styles.css: brand palette, typography, components and responsive layouts.
 - index.html: shell, accessible navigation and metadata.
@@ -78,9 +82,17 @@ Pages must be enabled in settings. The workflow alone does not guarantee the web
 ## Follow-up audit backlog
 
 - [ ] Review and approve specific policy versions and embed a version/date/source owner.
-- [ ] Replace word-only lessons with deep SKU cards, photos, verified materials, gem treatment disclosures and working micro-assessments.
+- [x] Add public gemstone reference, cut schematics and evidence checklist; [ ] attach real QC-approved SKU cards and real photo/video assets only after secure approval and rights checks.
 - [ ] Improve question discrimination: replace obvious distractors, validate question quality, calibrate the hard-fail critical rule and test with real staff.
-- [ ] Add rubric-based role plays and human review before recognizing independent client-advisor competence.
+- [x] Add written role-play with manual self-assessment rubric; [ ] conduct supervised human assessment before recognizing independent client-advisor competence.
 - [ ] Supply the actual COLORA vector logo; currently the portal uses a text wordmark, not a fabricated vector identity.
 - [ ] Move to a private, access-controlled LMS to centralize authenticated results (rather than browser storage) if the academy is for formal employee training.
 - [ ] Run automated browser/device accessibility checks after each deployment.
+
+## V2.0 product proof controls
+
+The GIA reference guides establish educational gem property descriptions only. They must not be used as proof of an exact COLORA piece's gem identity, treatments, metal, plating, safety or warranty. The required chain is: **verified SKU → controlled evidence → QC/product owner sign-off → dated approved claim → client-facing communication**.
+
+The public product schema does not authorize placing real supplier records, pricing, private BOMs, QC details or personal data in GitHub. For live operations, house the evidence in a permissioned backend and expose only approved public fields. Do not enable any client-facing claim while its supporting record is draft or unverified.
+
+Role-play drafts are never persisted or transmitted by the application. Self-check scoring evaluates which rubric boxes the visitor ticks, **not the actual quality of written text**. This is deliberate: adding an automatic numeric score without assessing the content would mislead employees. A manager's review remains necessary.
