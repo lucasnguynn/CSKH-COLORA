@@ -21,4 +21,4 @@ jobs:
         with:
           node-version: "22"
       - name: Run smoke tests
-        run: node tests/smoke.cjs
+        run: node tests/publication.cjs && node tests/ops.cjs && node tests/smoke.cjs
