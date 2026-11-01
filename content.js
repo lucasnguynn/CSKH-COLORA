@@ -495,7 +495,7 @@ window.COLORA_DATA = {
       "type": "Tư vấn",
       "title": "Khách mới hỏi về COLORA",
       "intent": "Làm rõ nhu cầu, không gửi hàng loạt sản phẩm",
-      "reply": "Cảm ơn bạn đã quan tâm đến COLORA. Chúng mình thiết kế trang sức demi-fine với đá màu làm điểm nhấn, để mỗi người có thể tìm thấy cách thể hiện thật riêng. Bạn đang tìm một món để đeo hằng ngày hay cho một dịp đặc biệt? Chúng mình sẽ chọn lọc vài gợi ý phù hợp hơn với bạn.",
+      "reply": "Chào bạn, COLORA làm trang sức demi-fine với điểm nhấn là những viên đá màu. Bạn đang tìm một món để đeo hằng ngày hay chọn làm quà vậy? Nếu bạn cho mình biết kiểu dáng hoặc màu sắc bạn thích, mình sẽ gợi ý vài mẫu để bạn dễ chọn hơn.",
       "check": "Không mặc định nhu cầu hoặc giới tính."
     },
     {
@@ -503,7 +503,7 @@ window.COLORA_DATA = {
       "type": "Tư vấn",
       "title": "Khách hỏi vì sao giá cao",
       "intent": "Giải thích giá trị dựa trên bằng chứng",
-      "reply": "Mình hiểu bạn muốn cân nhắc kỹ trước khi chọn. Với mẫu này, COLORA có thể cùng bạn xem chi tiết chất liệu, viên đá, cấu trúc thiết kế, cách hoàn thiện và quyền lợi chăm sóc đi kèm. Mình sẽ gửi thông số và hình ảnh thật của đúng mẫu để bạn so sánh một cách rõ ràng, thay vì chỉ dựa vào mức giá.",
+      "reply": "Mình hiểu, ở mức giá này bạn sẽ muốn cân nhắc kỹ. Mình có thể kiểm tra thông tin về viên đá, chất liệu và cách hoàn thiện của đúng mẫu bạn đang xem để giải thích rõ hơn. Bạn đang băn khoăn nhất về phần nào?",
       "check": "Đối chiếu SKU, không nói đá hiếm nếu chưa xác thực."
     },
     {
@@ -511,7 +511,7 @@ window.COLORA_DATA = {
       "type": "Tư vấn",
       "title": "Khách chọn quà nhưng không biết size",
       "intent": "Tránh cam kết đổi size sai",
-      "reply": "Món quà sẽ ý nghĩa hơn khi người nhận cảm thấy thật thoải mái lúc đeo. Bạn đang cân nhắc nhẫn, dây chuyền hay bông tai? Nếu là nhẫn mà chưa chắc size, chúng mình có thể gợi ý cách đo và kiểm tra khả năng chỉnh size của từng thiết kế trước khi bạn quyết định.",
+      "reply": "Bạn đang định tặng nhẫn hay một món trang sức khác? Nếu là nhẫn mà chưa biết size, mình có thể hướng dẫn cách đo từ một chiếc nhẫn người nhận đang đeo vừa, nếu có. Mình cũng sẽ kiểm tra xem thiết kế bạn chọn có chỉnh size được không nhé.",
       "check": "Không hứa mọi mẫu đều resize được."
     },
     {
@@ -519,7 +519,7 @@ window.COLORA_DATA = {
       "type": "Đá quý",
       "title": "Đá tự nhiên có hoàn toàn không xử lý?",
       "intent": "Tách nguồn gốc với treatment",
-      "reply": "Đá tự nhiên và đá không qua xử lý là hai khái niệm khác nhau. Một số loại đá tự nhiên có thể được xử lý để cải thiện sắc màu hoặc vẻ ngoài. Để trả lời chính xác cho món bạn quan tâm, COLORA sẽ đối chiếu hồ sơ viên đá và thông tin xử lý của mẫu đó trước khi xác nhận.",
+      "reply": "Không hẳn đâu bạn. Đá tự nhiên vẫn có thể đã qua xử lý để cải thiện màu sắc hoặc vẻ ngoài. Với mẫu bạn đang xem, mình cần kiểm tra hồ sơ đá rồi mới xác nhận được có xử lý hay không. Mình kiểm tra lại để trả lời bạn chính xác nhé.",
       "check": "Chỉ công bố treatment theo hồ sơ đã phê duyệt."
     },
     {
@@ -527,7 +527,7 @@ window.COLORA_DATA = {
       "type": "Đá quý",
       "title": "Màu đá không giống ảnh",
       "intent": "Giải thích ánh sáng và xác minh kỳ vọng",
-      "reply": "Cảm ơn bạn đã chia sẻ điều này. Sắc độ của đá màu có thể thể hiện khác nhau theo nguồn sáng, góc nhìn và màn hình. Mình muốn kiểm tra cụ thể mẫu bạn nhận để chắc rằng sự khác biệt nằm trong đặc tính đã mô tả hay có vấn đề cần hỗ trợ. Bạn có thể gửi giúp mình ảnh dưới ánh sáng tự nhiên nếu thuận tiện không?",
+      "reply": "Mình hiểu vì sao bạn băn khoăn khi màu đá ngoài đời khác ảnh. Ánh sáng và màn hình có thể làm màu trông khác đi, nhưng mình vẫn muốn kiểm tra đúng sản phẩm bạn nhận. Bạn gửi mình ảnh hoặc video chụp dưới ánh sáng tự nhiên cùng mã đơn, nếu tiện nhé. Mình sẽ đối chiếu rồi trao đổi cách hỗ trợ với bạn.",
       "check": "Không dùng đặc tính tự nhiên để phủ nhận sai lệch sản phẩm."
     },
     {
@@ -535,7 +535,7 @@ window.COLORA_DATA = {
       "type": "Chất liệu",
       "title": "Bạc có bị đen không?",
       "intent": "Giải thích giới hạn lớp phủ",
-      "reply": "Bề mặt bạc có thể thay đổi theo môi trường sử dụng, ma sát và tiếp xúc hóa chất, ngay cả khi có lớp hoàn thiện bảo vệ. Với đúng mẫu bạn chọn, COLORA sẽ kiểm tra chất liệu và cách hoàn thiện cụ thể, rồi hướng dẫn bảo quản phù hợp để sản phẩm giữ vẻ đẹp lâu hơn.",
+      "reply": "Bạc có thể bị xỉn màu theo thời gian, nhất là khi tiếp xúc với mồ hôi, mỹ phẩm hoặc hóa chất. Lớp hoàn thiện có thể giúp bảo vệ bề mặt nhưng không có nghĩa là sản phẩm sẽ không bao giờ đổi màu. Bạn đang xem mẫu nào? Mình kiểm tra chất liệu và hướng dẫn chăm sóc của mẫu đó cho bạn nhé.",
       "check": "Không cam kết 'không bao giờ xỉn'."
     },
     {
@@ -543,7 +543,7 @@ window.COLORA_DATA = {
       "type": "Chăm sóc",
       "title": "Đeo khi tắm hoặc đi bơi",
       "intent": "Phòng ngừa rủi ro",
-      "reply": "COLORA không khuyến nghị đeo trang sức khi tắm hoặc bơi. Hóa chất, nước biển và sự va chạm có thể ảnh hưởng đến bề mặt, cấu trúc cũng như một số loại đá. Khi tháo, bạn chỉ cần lau nhẹ bằng khăn mềm sạch khô và cất riêng từng món; mình có thể kiểm tra hướng dẫn vệ sinh chi tiết cho mẫu của bạn.",
+      "reply": "Mình khuyên bạn tháo trang sức trước khi tắm hoặc đi bơi nhé. Xà phòng, clo và nước biển có thể ảnh hưởng đến bề mặt cũng như một số loại đá. Sau khi đeo, bạn có thể lau nhẹ bằng khăn mềm, sạch và khô. Nếu bạn gửi tên mẫu đang dùng, mình sẽ kiểm tra thêm cách chăm sóc phù hợp.",
       "check": "Không khuyên ngâm tẩy đại trà."
     },
     {
@@ -551,7 +551,7 @@ window.COLORA_DATA = {
       "type": "Chăm sóc",
       "title": "Có dùng máy siêu âm không?",
       "intent": "Ngăn xử lý sai với đá nhạy cảm",
-      "reply": "Mình không khuyến nghị dùng máy siêu âm tại nhà khi chưa kiểm tra chính xác loại đá, phương pháp xử lý và kết cấu sản phẩm. Một số viên đá hoặc phần đính đá có thể không phù hợp. Bạn gửi giúp mình tên mẫu hoặc mã sản phẩm, COLORA sẽ hướng dẫn cách vệ sinh an toàn hơn.",
+      "reply": "Mình chưa khuyên bạn dùng máy siêu âm cho món này đâu, vì còn phải xem loại đá, cách xử lý đá và phần đính đá nữa. Một số thiết kế không phù hợp với cách vệ sinh đó. Bạn gửi mình mã mẫu hoặc ảnh sản phẩm nhé, mình sẽ kiểm tra với bộ phận kỹ thuật trước.",
       "check": "Không mô tả ultrasonic phù hợp mọi đá."
     },
     {
@@ -559,7 +559,7 @@ window.COLORA_DATA = {
       "type": "Bảo hành",
       "title": "Khách phát hiện đá lỏng",
       "intent": "Ưu tiên an toàn, không quy lỗi sớm",
-      "reply": "Cảm ơn bạn đã báo ngay cho COLORA. Để tránh ảnh hưởng thêm đến viên đá và phần chấu, bạn vui lòng tạm ngừng đeo và cất sản phẩm riêng. Mình sẽ ghi nhận tình trạng, hỗ trợ kiểm tra kỹ thuật và cập nhật phương án sau khi đội ngũ xem xét cấu trúc thực tế.",
+      "reply": "Bạn tạm ngừng đeo món trang sức này giúp mình nhé, để tránh viên đá bị rơi hoặc phần chấu bị ảnh hưởng thêm. Nếu tiện, bạn gửi mình ảnh chỗ bị lỏng và mã đơn hoặc mã sản phẩm. Mình sẽ nhờ đội kỹ thuật kiểm tra rồi cập nhật hướng xử lý cụ thể cho bạn.",
       "check": "Không tự hứa miễn phí hay kết luận khách làm rơi."
     },
     {
@@ -567,7 +567,7 @@ window.COLORA_DATA = {
       "type": "Bảo hành",
       "title": "Khách báo mất đá",
       "intent": "Ghi nhận và đánh giá kỹ thuật",
-      "reply": "Mình rất tiếc vì trải nghiệm này đã ảnh hưởng đến bạn. COLORA sẽ tiếp nhận thông tin sản phẩm, thời điểm phát hiện và tình trạng phần đính đá để đội kỹ thuật xác minh nguyên nhân. Sau kiểm tra, chúng mình sẽ trao đổi rõ phương án sửa chữa, thay đá và chi phí nếu có trước khi thực hiện.",
+      "reply": "Mình rất tiếc khi biết viên đá bị mất. Bạn gửi mình ảnh phần đính đá hiện tại cùng mã đơn hoặc mã sản phẩm nhé. Mình sẽ chuyển đội kỹ thuật kiểm tra xem có thể sửa hoặc thay đá như thế nào, rồi báo rõ phương án và chi phí nếu có trước khi thực hiện.",
       "check": "Không quy trách nhiệm từ một ảnh duy nhất."
     },
     {
@@ -575,7 +575,7 @@ window.COLORA_DATA = {
       "type": "Đổi trả",
       "title": "Khách không có video mở hộp",
       "intent": "Tiếp nhận thay vì từ chối máy móc",
-      "reply": "Bạn không cần lo vì chưa có video mở hộp. COLORA vẫn sẽ ghi nhận vấn đề và cùng bạn đối chiếu thông tin đơn hàng, tình trạng sản phẩm cùng dữ liệu đóng gói/vận chuyển hiện có. Bạn có thể gửi hình ảnh và mô tả thực tế để chúng mình kiểm tra nhanh hơn nếu thuận tiện.",
+      "reply": "Không có video mở hộp thì bạn cứ chia sẻ tình trạng để mình tiếp nhận và kiểm tra trước nhé. Nếu tiện, bạn gửi giúp mình ảnh sản phẩm, bao bì còn giữ và mã đơn. Mình sẽ đối chiếu với thông tin đóng gói, giao hàng và chính sách áp dụng rồi phản hồi cụ thể cho bạn.",
       "check": "Không đặt video unboxing thành điều kiện duy nhất."
     },
     {
@@ -583,7 +583,7 @@ window.COLORA_DATA = {
       "type": "Đổi trả",
       "title": "Khách nhắn sau mốc 48 giờ",
       "intent": "Không từ chối tự động quyền bắt buộc",
-      "reply": "Cảm ơn bạn đã thông tin. Mình sẽ tiếp nhận trường hợp của bạn và kiểm tra theo đúng loại vấn đề, thời điểm nhận hàng cùng chính sách áp dụng. Mốc thông báo hỗ trợ quá trình tra soát, nhưng COLORA vẫn cần xem xét đầy đủ tình trạng sản phẩm và quyền lợi liên quan trước khi phản hồi phương án.",
+      "reply": "Mình đã nhận được thông tin của bạn. Dù bạn liên hệ sau mốc 48 giờ, mình vẫn cần xem sản phẩm đang gặp vấn đề gì và kiểm tra chính sách áp dụng trước khi kết luận. Bạn cho mình biết ngày nhận hàng và tình trạng hiện tại nhé, mình sẽ hỗ trợ kiểm tra tiếp.",
       "check": "Phân biệt điều kiện đổi ý và lỗi hàng."
     },
     {
@@ -591,7 +591,7 @@ window.COLORA_DATA = {
       "type": "Giao hàng",
       "title": "Đơn trễ dịp tặng quà",
       "intent": "Cập nhật trung thực, tránh hứa chắc",
-      "reply": "Mình hiểu thời điểm nhận món quà rất quan trọng với bạn, và xin lỗi vì việc chậm trễ đã gây bất tiện. Mình sẽ kiểm tra ngay trạng thái chuẩn bị và vận chuyển, sau đó gửi bạn mốc cập nhật xác thực cùng các phương án khả thi để bạn chủ động sắp xếp.",
+      "reply": "Mình xin lỗi vì đơn hàng chưa đến kịp lúc bạn cần để tặng. Mình sẽ kiểm tra ngay tình trạng với bên vận chuyển và cập nhật cho bạn khi có thông tin chắc chắn. Nếu bạn đang cần tính phương án khác cho dịp tặng quà này, cứ nói mình biết nhé.",
       "check": "Không tự cam kết ngày đến hoặc hoàn phí."
     },
     {
@@ -599,7 +599,7 @@ window.COLORA_DATA = {
       "type": "Hậu mãi",
       "title": "Hỏi thăm sau nhận hàng",
       "intent": "Phát hiện vấn đề fit/cảm giác đeo",
-      "reply": "COLORA hy vọng món trang sức đã đến với bạn thật trọn vẹn. Mình chỉ muốn hỏi nhẹ liệu kích thước và cảm giác đeo có phù hợp không. Nếu có điểm nào bạn muốn điều chỉnh hoặc cần tìm hiểu thêm về cách chăm sóc, chúng mình luôn sẵn lòng hỗ trợ.",
+      "reply": "Chào bạn, mình nhắn hỏi thăm một chút: món trang sức bạn nhận hôm trước đeo có vừa và thoải mái không? Nếu có điểm nào chưa ưng hoặc bạn muốn hỏi thêm về cách chăm sóc, cứ nhắn mình nhé.",
       "check": "Gửi qua kênh được phép; không upsell."
     },
     {
@@ -607,7 +607,7 @@ window.COLORA_DATA = {
       "type": "Hậu mãi",
       "title": "Khách phản ánh thái độ tư vấn",
       "intent": "Lắng nghe và xử lý cụ thể",
-      "reply": "Cảm ơn bạn đã dành thời gian cho COLORA biết trải nghiệm vừa rồi. Mình rất tiếc vì cách trao đổi chưa khiến bạn cảm thấy được lắng nghe. Nếu bạn sẵn lòng, mình muốn hiểu rõ thời điểm và nội dung khiến bạn khó chịu để chuyển tới người phụ trách và phản hồi bằng một hướng xử lý cụ thể.",
+      "reply": "Mình xin lỗi vì cách tư vấn vừa rồi khiến bạn không thoải mái. Cảm ơn bạn đã nói để COLORA biết và cải thiện. Mình sẽ xem lại phần trao đổi và chuyển phản hồi đến người phụ trách. Nếu có điều gì bạn muốn bên mình lưu ý thêm, mình sẵn sàng lắng nghe.",
       "check": "Không đòi khách giải thích lặp đi lặp lại."
     },
     {
@@ -615,7 +615,7 @@ window.COLORA_DATA = {
       "type": "Tin cậy",
       "title": "Khách hỏi Certificate có phải GIA?",
       "intent": "Phân biệt chứng nhận nội bộ và kiểm định độc lập",
-      "reply": "Certificate do COLORA phát hành xác nhận thông tin sản phẩm theo hồ sơ của thương hiệu; tài liệu này không đồng nghĩa với báo cáo giám định của GIA hoặc một phòng thí nghiệm độc lập. Nếu mẫu bạn quan tâm có báo cáo độc lập, chúng mình sẽ cung cấp đúng tên đơn vị và mã báo cáo tương ứng.",
+      "reply": "Không bạn nhé. Giấy xác nhận thông tin sản phẩm do COLORA phát hành, nếu có, không phải báo cáo giám định của GIA. Mình sẽ kiểm tra xem mẫu bạn quan tâm có báo cáo từ phòng giám định độc lập hay không. Nếu có, mình gửi bạn tên đơn vị và mã báo cáo để đối chiếu.",
       "check": "Không gắn logo/claim GIA nếu không có bằng chứng."
     },
     {
@@ -623,7 +623,7 @@ window.COLORA_DATA = {
       "type": "Tư vấn",
       "title": "Khách hỏi giới hạn mua mỗi danh mục",
       "intent": "Không biến pilot thành chính sách công bố",
-      "reply": "COLORA đề cao những lựa chọn có cân nhắc và phù hợp với người đeo. Nếu một dòng sản phẩm có giới hạn số lượng hoặc điều kiện đặt mua riêng, chúng mình sẽ thông tin rõ trong trang sản phẩm hoặc điều khoản áp dụng. Mình có thể kiểm tra trực tiếp tình trạng của mẫu bạn quan tâm.",
+      "reply": "Một số mẫu có thể có giới hạn số lượng đặt mua, nhưng điều kiện này chỉ áp dụng khi đã được công bố cho mẫu đó. Bạn đang quan tâm sản phẩm nào? Mình kiểm tra tình trạng và điều kiện đặt mua hiện tại giúp bạn nhé.",
       "check": "Không tự áp dụng rule 90/180 ngày chưa phê duyệt."
     },
     {
@@ -631,7 +631,7 @@ window.COLORA_DATA = {
       "type": "Hậu mãi",
       "title": "Kết thúc một case sửa chữa",
       "intent": "Tóm tắt minh bạch và xác nhận khách đã nhận",
-      "reply": "COLORA xin cập nhật sản phẩm của bạn đã hoàn tất bước kiểm tra và xử lý theo phương án chúng mình đã trao đổi. Mình sẽ gửi lại thông tin những hạng mục đã thực hiện, hướng dẫn sử dụng sau chăm sóc và bước bàn giao tiếp theo. Cảm ơn bạn đã cho COLORA cơ hội chăm sóc món trang sức này.",
+      "reply": "Mình cập nhật để bạn yên tâm: món trang sức của bạn đã hoàn tất phần kiểm tra và xử lý theo phương án hai bên đã thống nhất. Mình gửi bạn các hạng mục đã thực hiện cùng thông tin nhận lại sản phẩm nhé. Nếu sau đó còn điều gì cần hỗ trợ, bạn cứ nhắn mình.",
       "check": "Chỉ gửi sau khi QC xác nhận và phương án thực tế hoàn tất."
     }
   ],
