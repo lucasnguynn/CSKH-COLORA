@@ -96,3 +96,41 @@
 .roleplay-section{padding:23px 20px}
 .gem-card{min-height:0}
 }
+
+
+/* COLORA ACADEMY V2.1 · PUBLIC RELEASE AND FACILITATOR ASSESSMENT */
+.ops-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:21px 0 24px}
+.ops-summary>div{background:var(--paper);border:1px solid var(--border);padding:20px 23px;border-radius:12px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:6px}
+.ops-summary strong{font:500 39px/1 var(--serif);color:#183859}
+.ops-summary span{font-size:11px;color:#5d6c78;font-weight:600}
+.ops-empty{border:1px dashed #cdbb9f;background:linear-gradient(110deg,#fffdf7,#f0eadf);padding:46px 28px;border-radius:13px;text-align:center;margin:24px 0}
+.ops-empty h2{font:500 clamp(29px,3vw,39px)/1.1 var(--serif);color:#153553;margin:10px auto}
+.ops-empty p{font-size:12px;line-height:1.9;max-width:650px;color:#56697b;margin:12px auto 20px}
+.ops-emblem{display:block;font:500 54px/1 var(--serif);color:#ad9068}
+.ops-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.ops-step{display:flex;align-items:start;gap:19px;border:1px solid var(--border);border-radius:11px;background:var(--paper);padding:22px}
+.ops-step>span{font:500 34px/1 var(--serif);color:#a5885c}
+.ops-step h3{font:500 27px/1.1 var(--serif);color:#1b3854;margin:1px 0 9px}
+.ops-step p{font-size:11px;line-height:1.85;color:#566b7d;margin:0}
+.ops-review-layout{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:21px;margin-top:20px;align-items:start}
+.ops-review-layout>div{min-width:0}
+.ops-panel{background:var(--paper);border:1px solid var(--border);border-radius:12px;margin:0 0 17px;padding:27px}
+.ops-panel h2{font:500 32px/1.06 var(--serif);margin:0 0 11px;color:#183957}
+.ops-panel>p{font-size:12px;line-height:1.9;color:#52677a}
+.ops-rubric-row{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:17px 0;border-top:1px solid var(--border)}
+.ops-rubric-row>div{flex:1;min-width:0}
+.ops-rubric-row strong{display:block;font-size:12px;color:#27435d}
+.ops-rubric-row p{font-size:11px;color:#5e7183;line-height:1.85;margin:6px 0 0}
+.ops-rubric-row label{display:flex;flex-direction:column;gap:6px;flex:0 0 165px}
+.ops-rubric-row label span{font-size:10px;letter-spacing:.06em;color:#755e40;font-weight:700}
+.ops-rubric-row select{width:100%;border:1px solid #cfc5b4;border-radius:6px;background:white;padding:8px;color:#193956;font-size:11px}
+.ops-rubric-row small{color:#667a8b;font-size:10px}
+.ops-risk{display:flex;align-items:start;gap:14px;padding:14px 0;border-bottom:1px solid var(--border);font-size:12px;line-height:1.7;color:#425c70;cursor:pointer}
+.ops-risk input{accent-color:#ad554b;margin-top:5px;width:17px;height:17px;flex-shrink:0}
+.ops-result{display:flex;align-items:center;gap:18px;background:#eee8dc;border:1px solid #d9c5a4;padding:18px;border-radius:8px;margin-top:25px}
+.ops-result>strong{font:500 44px/1 var(--serif);color:#183957;white-space:nowrap}
+.ops-result h3{font:500 24px/1.05 var(--serif);margin:0 0 6px;color:#193858}
+.ops-result p{font-size:11px;color:#536a7b;line-height:1.8;margin:0}
+@media(max-width:1180px){.ops-review-layout{grid-template-columns:minmax(0,1fr) 250px}}
+@media(max-width:900px){.ops-review-layout,.ops-steps{grid-template-columns:1fr}.ops-review-layout .aside-panel{position:static}}
+@media(max-width:620px){.ops-summary{grid-template-columns:1fr}.ops-summary>div{padding:13px 20px}.ops-step{padding:17px}.ops-panel{padding:22px 19px}.ops-rubric-row{flex-direction:column;align-items:stretch;gap:12px}.ops-rubric-row label{flex-basis:auto}.ops-empty{padding:36px 18px}.ops-result>strong{font-size:35px}}
